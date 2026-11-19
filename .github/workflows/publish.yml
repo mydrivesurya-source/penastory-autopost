@@ -38,4 +38,4 @@ jobs:
           IG_USER_ID: ${{ vars.IG_USER_ID }}
       - name: Mark posted
         if: always()
-        run: git add -A queue status control && git commit -qm "Mark posted" && git push -q || echo "nothing to commit"
+        run: git add -A . && git commit -qm "Mark posted" && git push -q || echo "nothing to commit"
