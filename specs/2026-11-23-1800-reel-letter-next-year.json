@@ -1,0 +1,46 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1779729739456-be9369745290?w=1600&q=90",
+  "https://images.unsplash.com/photo-1528458965990-428de4b1cb0d?w=1600&q=90",
+  "https://images.unsplash.com/photo-1780536890742-a3d937535d66?w=1600&q=90",
+  "https://images.unsplash.com/photo-1511634829096-045a111727eb?w=1600&q=90",
+  "https://images.unsplash.com/photo-1474366521946-c3d4b507abf2?w=1600&q=90"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "The letter arrived on a Tuesday.",
+   "dur": 2.6
+  },
+  {
+   "image": 1,
+   "text": "The postmark said next year.",
+   "dur": 2.8
+  },
+  {
+   "image": 2,
+   "text": "Inside, in her own handwriting: \"Don't take the job in Pune.\"",
+   "dur": 3.6
+  },
+  {
+   "image": 3,
+   "text": "She laughed. Then she noticed the coffee stain on the corner.",
+   "dur": 3.4
+  },
+  {
+   "image": 4,
+   "text": "The same stain her cup had just left on the table.",
+   "dur": 3.2,
+   "small": "Your turn: what happens next?"
+  }
+ ],
+ "end": {
+  "image": 0,
+  "text": "Write the next line in the comments",
+  "small": "Most-liked line wins 🏆"
+ },
+ "caption": "The letter arrived on a Tuesday. It was postmarked next year. ✉️\n\nWrite the next line in the comments. Most-liked line wins 🏆\n\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #writingprompt #onelineyourturn #shortstory #storytelling",
+ "music": 0
+}

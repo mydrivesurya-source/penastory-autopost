@@ -1,7 +1,7 @@
 {
  "kind": "carousel",
  "style": "photo",
- "label": "PEN A STORY · ఒక్క కథ",
+ "label": "PEN A STORY · ONE STORY",
  "images": [
   "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=1600&q=90",
   "https://images.unsplash.com/photo-1533128361669-69c065857a13?w=1600&q=90",
@@ -12,31 +12,31 @@
  "slides": [
   {
    "image": 0,
-   "text": "తాతయ్య watch 4:17 దగ్గర ఆగిపోయింది. ఆయన ఎవరినీ repair చేయనివ్వలేదు.",
-   "small": "ఒక్క కథ · 4:17"
+   "text": "My grandfather's watch stopped at 4:17. He never let anyone fix it.",
+   "small": "One Story · 4:17"
   },
   {
    "image": 1,
-   "text": "\"Watch తప్పు టైం చూపిస్తోంది తాతయ్యా.\" ఆయన నవ్వేవారు: \"లేదు. Correct గానే ఉంది.\""
+   "text": "\"Your watch is wrong, thatha.\" He'd smile. \"No. It's right.\""
   },
   {
    "image": 2,
-   "text": "ఆయన పోయిన తర్వాత drawer లో ఒక పాత letter."
+   "text": "After he passed, we found an old letter in his drawer."
   },
   {
    "image": 3,
-   "text": "1971. ఒక railway station. మంటల్లో ఒక coach. ఆయన 12 మందిని బయటకి లాగారు."
+   "text": "1971. A railway station. A coach on fire. He pulled twelve people out."
   },
   {
    "image": 4,
-   "text": "Letter చివర: \"You saved us at 4:17. We will never forget.\" ఆయన ఎవరికీ చెప్పలేదు. Time ని మాత్రం ఉంచుకున్నారు."
+   "text": "The letter ended: \"You saved us at 4:17. We will never forget.\" He never told anyone. He just kept the time."
   },
   {
    "kind": "end",
    "image": 0,
-   "text": "మీ family లో silent hero ఎవరు?",
-   "small": "Comment చేయండి 🕰️"
+   "text": "Who's the quiet hero in your family?",
+   "small": "Tell us below 🕰️"
   }
  ],
- "caption": "తాతయ్య watch 4:17 దగ్గర ఆగిపోయింది. ఎందుకు? 🕰️\n\nఒక్క post లో పూర్తి కథ — చివరి వరకు swipe చేయండి.\n\nమీ family లో silent hero ఎవరు? Comment చేయండి 🕰️\n\nఈ కథ ఎవరికైనా గుర్తు చేస్తే, వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #shortstory #tenglish #storytelling"
+ "caption": "Why did grandfather's watch stop at 4:17? 🕰️\n\nA complete story in one post. Swipe to the end.\n\nWho's the quiet hero in your family? Tell us below 🕰️\n\nIf this reminded you of someone, send it to them.\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #shortstory #storytelling #indianauthors #bookstagramindia"
 }

@@ -48,7 +48,8 @@ def build(spec_path):
         post = {"type": "carousel" if len(media) > 1 else "image", "caption": cap, "media": media}
     elif k == "reel":
         out = MEDIA / f"{stem}.mp4"
-        with tempfile.TemporaryDirectory() as tmp: render.reel(s, imgs, str(out), tmp)
+        with tempfile.TemporaryDirectory() as tmp:
+            (render.photo_reel if s.get("style") == "photo" else render.reel)(s, imgs, str(out), tmp)
         post = {"type": "reel", "caption": cap, "media": [f"media/{out.name}"]}
         if s.get("cover_frame") is not False:
             pass

@@ -1,0 +1,53 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1605292356183-a77d0a9c9d1d?w=1600&q=90",
+  "https://images.unsplash.com/photo-1496813146940-1601b02f81a4?w=1600&q=90",
+  "https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?w=1600&q=90",
+  "https://images.unsplash.com/photo-1794550399755-2e72c031cca2?w=1600&q=90",
+  "https://images.unsplash.com/photo-1533128361669-69c065857a13?w=1600&q=90",
+  "https://images.unsplash.com/photo-1532767153582-b1a0e5145009?w=1600&q=90",
+  "assets/covers/camera-on-his-shoulder.png"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "Power cut. 8 PM. No phones. No Wi-Fi.",
+   "dur": 3.0
+  },
+  {
+   "image": 1,
+   "text": "Ammamma lit a candle and said, \"Sit. I'll tell you a story.\"",
+   "dur": 3.6
+  },
+  {
+   "image": 2,
+   "text": "A king. A clever minister. A moon that followed a boy home.",
+   "dur": 3.6
+  },
+  {
+   "image": 3,
+   "text": "The lights came back at 10. Nobody moved.",
+   "dur": 3.2
+  },
+  {
+   "image": 4,
+   "text": "Best night of the year. And it cost nothing.",
+   "dur": 3.2,
+   "small": "Remember those nights?"
+  }
+ ],
+ "end": {
+  "image": 5,
+  "text": "Which story did your grandparents tell you?",
+  "small": "Tell us below 🕯️"
+ },
+ "caption": "Power cut. No phones. Ammamma's stories. Best night of the year. 🕯️\n\nWhich story did your grandparents tell you? 👇\n\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #childhoodmemories #90skids #storytelling #nostalgia",
+ "music": 1,
+ "book": {
+  "image": 6,
+  "text": "Camera on His Shoulder",
+  "small": "Jasveer Singh Dangi · the nostalgia our generation carries"
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1528458965990-428de4b1cb0d?w=1600&q=90",
+  "https://images.unsplash.com/photo-1774904721886-7b3abd03be14?w=1600&q=90",
+  "https://images.unsplash.com/photo-1780536890742-a3d937535d66?w=1600&q=90",
+  "https://images.unsplash.com/photo-1779729739456-be9369745290?w=1600&q=90",
+  "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1600&q=90",
+  "assets/covers/unseen-curriculum.jpg"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "Every essay I wrote came back covered in red ink.",
+   "dur": 3.2
+  },
+  {
+   "image": 1,
+   "text": "Mrs. D'Souza. Class 9. I hated that red pen.",
+   "dur": 3.0
+  },
+  {
+   "image": 2,
+   "text": "Last year I sent her my first published book.",
+   "dur": 3.0
+  },
+  {
+   "image": 3,
+   "text": "She posted it back. Every page marked. In red.",
+   "dur": 3.4
+  },
+  {
+   "image": 4,
+   "text": "On the last page: \"Finally. No corrections. Proud of you.\"",
+   "dur": 3.6,
+   "small": "Some teachers never stop teaching."
+  }
+ ],
+ "end": {
+  "image": 0,
+  "text": "Tag the teacher who made you a writer",
+  "small": "Tell them today ✍️"
+ },
+ "caption": "Every essay came back covered in red ink. Then I sent her my first book. ✍️\n\nTag the teacher who made you who you are 👇\n\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #teachers #writersofinstagram #shortstory #indianauthors",
+ "music": 1,
+ "book": {
+  "image": 5,
+  "text": "The Unseen Curriculum",
+  "small": "Vibhuti Vaid · what great teachers teach without a syllabus"
+ }
+}

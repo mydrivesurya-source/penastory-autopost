@@ -1,7 +1,7 @@
 {
  "kind": "carousel",
  "style": "photo",
- "label": "PEN A STORY · ఒక్క కథ",
+ "label": "PEN A STORY · ONE STORY",
  "images": [
   "https://images.unsplash.com/photo-1792143663827-c77f1c1f2d71?w=1600&q=90",
   "https://images.unsplash.com/photo-1787399087896-fff638c01a2b?w=1600&q=90",
@@ -12,35 +12,35 @@
  "slides": [
   {
    "image": 0,
-   "text": "Narayana chai stall. ఉదయం 5 గంటలు. 30 years.",
-   "small": "ఒక్క కథ · The 5 AM Chai"
+   "text": "Narayana's chai stall. 5 AM. Thirty years.",
+   "small": "One Story · The 5 AM Chai"
   },
   {
    "image": 1,
-   "text": "ఆయనకి అందరి order గుర్తు. Auto drivers కి strong. Students కి extra sugar."
+   "text": "He knew every order by heart. Strong for the auto drivers. Extra sugar for the students."
   },
   {
    "image": 2,
-   "text": "ఒక old man రోజూ వచ్చేవాడు. ఒకే chai. ఒకే corner. ఎప్పుడూ ఒంటరిగా."
+   "text": "One old man came every day. One chai. Same corner. Always alone."
   },
   {
    "image": 3,
-   "text": "ఒక రోజు ఆయన రాలేదు. రెండో రోజు కూడా. మూడో రోజు Narayana stall మూసేశాడు."
+   "text": "One morning he didn't come. Nor the next. On the third day, Narayana shut his stall early."
   },
   {
    "image": 4,
-   "text": "Flask పట్టుకుని old man ఇంటికి వెళ్ళాడు. జ్వరం. ఒంటరిగా."
+   "text": "He carried a flask to the old man's house. Fever. Nobody else had noticed."
   },
   {
    "image": 0,
-   "text": "\"మీ chai రాలేదు అంటే, ఏదో తేడా ఉందని తెలుసు.\" కొన్ని relationships కి పేరు అవసరం లేదు."
+   "text": "\"When your chai goes undrunk, I know something is wrong.\" Some relationships don't need a name."
   },
   {
    "kind": "end",
    "image": 2,
-   "text": "మీ favourite chai stall ఎక్కడ?",
-   "small": "Tag చేయండి ☕"
+   "text": "Where's your favourite chai stall?",
+   "small": "Tag it ☕"
   }
  ],
- "caption": "ఉదయం 5. ఒక chai stall. ఒక old man. ☕\n\nఒక్క post లో పూర్తి కథ — చివరి వరకు swipe చేయండి.\n\nమీ favourite chai stall ఎక్కడ? Tag చేయండి ☕\n\nఈ కథ ఎవరికైనా గుర్తు చేస్తే, వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #shortstory #tenglish #storytelling"
+ "caption": "5 AM. A chai stall. An old man who stopped coming. ☕\n\nA complete story in one post. Swipe to the end.\n\nWhere's your favourite chai stall? Tag it ☕\n\nIf this reminded you of someone, send it to them.\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #shortstory #storytelling #indianauthors #bookstagramindia"
 }

@@ -293,3 +293,142 @@ am = [("bedread", "Me: 10 PM కి పడుకుంటా.\nAlso me at 2 AM: 
 for i, (ph, t, k) in enumerate(am):
     story(f"{days[i]}-1030-story-am", ph, t, "", k.upper())
 print(len(list(S.glob("2026-11-2*.json"))) + len(list(S.glob("2026-11-30*.json"))), "specs")
+
+# ======================= ENGLISH half (50/50 balance) =======================
+APP_EN = "New stories every day on the free Pen A Story app. Link in bio."
+ONE_EN = "PEN A STORY · ONE STORY"
+def stand_en(day, slug, fr, end, hook):
+    cap = (f"{hook}\n\nA complete story in one post. Swipe to the end.\n\n{end[1]} {end[2]}\n\n"
+           f"If this reminded you of someone, send it to them.\n{APP_EN}\n\n#penastory #shortstory #storytelling #indianauthors #bookstagramindia")
+    carousel(f"{day}-1930-story-{slug}", ONE_EN, fr, end, cap)
+stand_en(days[3], "umbrella", [("rainst", "Koti bus stop. July. Thunder, and the kind of rain that doesn't stop.", "One Story · One Umbrella"),
+   ("rain1", "A stranger tilted his umbrella toward her. Twenty minutes. Not a single word."),
+   ("rain2", "Her bus came. She got on. The umbrella stayed with him. He never asked her name."),
+   ("clock", "Every monsoon after that, he went back to the same bus stop. Just in case."),
+   ("rainst", "Seventh year. A woman stood beside him, holding an umbrella. \"It took me seven years to return this.\"")],
+  ("rain1", "What's your favourite rain memory?", "Tell us below ☔"), "One bus stop. One rain. One umbrella. ☔")
+stand_en(days[4], "chai-5am", [("chai1", "Narayana's chai stall. 5 AM. Thirty years.", "One Story · The 5 AM Chai"),
+   ("chai3", "He knew every order by heart. Strong for the auto drivers. Extra sugar for the students."),
+   ("chai2", "One old man came every day. One chai. Same corner. Always alone."),
+   ("clock", "One morning he didn't come. Nor the next. On the third day, Narayana shut his stall early."),
+   ("door", "He carried a flask to the old man's house. Fever. Nobody else had noticed."),
+   ("chai1", "\"When your chai goes undrunk, I know something is wrong.\" Some relationships don't need a name.")],
+  ("chai2", "Where's your favourite chai stall?", "Tag it ☕"), "5 AM. A chai stall. An old man who stopped coming. ☕")
+stand_en(days[7], "exam-pen", [("lib2", "Exam hall. My pen died. Three hours to go.", "One Story · The Pen"),
+   ("let4", "The girl at the next bench slid her spare pen across. Didn't say a word."),
+   ("clock", "When the exam ended, I looked for her to return it. She was gone."),
+   ("cofbk", "Fifteen years, that pen sat on my desk. Every interview. Every signature."),
+   ("market", "Today a patient at my clinic asked to borrow a pen for her form."),
+   ("let3", "I handed her that pen. She looked at it and smiled. \"Isn't this mine?\"")],
+  ("lib2", "Has a tiny kindness ever changed your life?", "Share it below 👇"), "My pen died in the exam hall. Three hours left. ✍️")
+stand_en(days[9], "grandpa-watch", [("watch", "My grandfather's watch stopped at 4:17. He never let anyone fix it.", "One Story · 4:17"),
+   ("gma1", "\"Your watch is wrong, thatha.\" He'd smile. \"No. It's right.\""),
+   ("let2", "After he passed, we found an old letter in his drawer."),
+   ("st2", "1971. A railway station. A coach on fire. He pulled twelve people out."),
+   ("let1", "The letter ended: \"You saved us at 4:17. We will never forget.\" He never told anyone. He just kept the time.")],
+  ("watch", "Who's the quiet hero in your family?", "Tell us below 🕰️"), "Why did grandfather's watch stop at 4:17? 🕰️")
+textcar(days[3], "1630", "author-callout", "CALLING ALL WRITERS",
+  [("let4", "Got a story sitting in a notebook, your phone notes, or your head?", "Calling all writers"),
+   ("cofbk", "Pen A Story publishes new authors as eBooks. English or Telugu. No publishing fee."),
+   ("lib3", "Your book reaches readers in 175+ countries through the Pen A Story app.")],
+  ("let4", "DM us the word AUTHOR", "Your first book could start here"),
+  "Got a story you've never shown anyone? ✍️\n\nPen A Story publishes new authors as eBooks, in English or Telugu, with no publishing fee. Readers in 175+ countries.\n\nDM us \"AUTHOR\" to start. Tag a friend who should be writing 👇\n\n#penastory #indianauthors #writersofinstagram #publishyourbook #amwriting")
+memes(days[0], "readers-1",
+  [("bedread", "Me: just one chapter.\nThe clock: 3:47 AM 🙂", "Reader problems"),
+   ("bedread2", "Mum: \"Lights off.\"\nMe under the blanket with a torch:"),
+   ("cofbk", "When a character dies and you need to tell someone, but nobody in the house cares."),
+   ("lib", "Walking into a bookshop \"just to look\" and walking out with four books.")],
+  ("teabk", "Which one is you? 1, 2, 3 or 4?", "Tell us 😂"), "\"Just one chapter,\" we said… 😂")
+textcar(days[2], "1630", "oneline-ep01", "ONE LINE. YOUR TURN. · EP 01",
+  [("let1", "We write the first line. You write the second.", "How to play"),
+   ("st3", "\"The letter arrived on a Tuesday. It was postmarked next year.\"")],
+  ("let3", "What happens next? Write line two", "Most-liked line wins 🏆"),
+  "\"The letter arrived on a Tuesday. It was postmarked next year.\" ✉️\n\nThe first line is ours. The second is yours. Write it in the comments, in any language.\n\nMost-liked line wins. 🏆\n\n#penastory #onelineyourturn #writingprompt #shortstory #writersofinstagram")
+
+# ======================= DAILY REEL 18:00 (English, cinematic photo reels) =======================
+def reel(day, slug, beats, end, cap, music=0):
+    keys = []
+    for b in beats + [end]:
+        if b[0] not in keys: keys.append(b[0])
+    B = [dict({"image": keys.index(b[0]), "text": b[1], "dur": b[2]}, **({"small": b[3]} if len(b) > 3 else {})) for b in beats]
+    E = {"image": keys.index(end[0]), "text": end[1], "small": end[2]}
+    (S / f"{day}-1800-reel-{slug}.json").write_text(json.dumps({"kind": "reel", "style": "photo", "images": [U(P[k]) for k in keys],
+        "beats": B, "end": E, "caption": cap, "music": music}, ensure_ascii=False, indent=1))
+TAGS = "#penastory #shortstory #storytelling #readersofinstagram #bookstagramindia"
+reel(days[0], "last-customer",
+ [("lib", "The bookshop was closing for good.", 3.0, "41 years. Last night."), ("readsun", "At 9 PM, a girl in a school uniform was still in the corner, reading.", 3.6),
+  ("lib2", "\"We're closing, beta.\" She didn't look up. \"Can I finish this chapter?\"", 3.8), ("lib3", "At midnight she asked, \"Who decides when a shop's story ends?\"", 3.6),
+  ("lib", "Mr. Rao took the closing sign off the door.", 3.4, "Some stories refuse to end.")],
+ ("lib2", "Would you have kept it open?", "Pen A Story · a new story every day"),
+ f"The bookshop was closing for good. One customer refused to leave. 📚\n\nWould you have kept it open? Tell us 👇\n\n{APP_EN}\n\n{TAGS}")
+reel(days[1], "window-seat",
+ [("twin1", "Window seat. Hyderabad to Vizag. 12 hours with a stranger.", 3.2), ("tin1", "She wrote in a notebook the whole way. He pretended not to look.", 3.6),
+  ("twin2", "Rajahmundry. The bridge. She tore out a page and handed it to him.", 3.6), ("let4", "It was a sketch of him, asleep. Under it: \"You snore. Nice to meet you.\"", 4.0),
+  ("st3", "Vizag. She got off. He still has the page. Eleven years now.", 3.4, "Some people stay for one journey. Some stay forever.")],
+ ("twin1", "Ever met someone on a train you never forgot?", "Tell us your train story"),
+ f"Window seat. 12 hours. A stranger with a notebook. 🚆\n\nEver met someone on a train you never forgot? Tell us 👇\n\n{APP_EN}\n\n{TAGS}", music=1)
+reel(days[2], "letter-next-year",
+ [("let1", "The letter arrived on a Tuesday.", 2.6), ("let3", "The postmark said next year.", 2.8),
+  ("let2", "Inside, in her own handwriting: \"Don't take the job in Pune.\"", 3.6), ("rain2", "She laughed. Then she noticed the coffee stain on the corner.", 3.4),
+  ("cofbk2", "The same stain her cup had just left on the table.", 3.2, "Your turn: what happens next?")],
+ ("let1", "Write the next line in the comments", "Most-liked line wins 🏆"),
+ f"The letter arrived on a Tuesday. It was postmarked next year. ✉️\n\nWrite the next line in the comments. Most-liked line wins 🏆\n\n{APP_EN}\n\n#penastory #writingprompt #onelineyourturn #shortstory #storytelling")
+reel(days[3], "power-cut",
+ [("diya2", "Power cut. 8 PM. No phones. No Wi-Fi.", 3.0), ("gma3", "Ammamma lit a candle and said, \"Sit. I'll tell you a story.\"", 3.6),
+  ("moon", "A king. A clever minister. A moon that followed a boy home.", 3.6), ("diya", "The lights came back at 10. Nobody moved.", 3.2),
+  ("gma1", "Best night of the year. And it cost nothing.", 3.2, "Remember those nights?")],
+ ("moon2", "Which story did your grandparents tell you?", "Tell us below 🕯️"),
+ f"Power cut. No phones. Ammamma's stories. Best night of the year. 🕯️\n\nWhich story did your grandparents tell you? 👇\n\n{APP_EN}\n\n#penastory #childhoodmemories #90skids #storytelling #nostalgia", music=1)
+reel(days[4], "margin-notes",
+ [("bookrow", "A second-hand book. ₹40. Abids Sunday market.", 3.0), ("openbook", "Someone had written in the margins. Funny notes. Sad ones.", 3.4),
+  ("let4", "On the last page: \"If you're reading this, write back.\"", 3.4), ("cofbk", "So she did. And left the book back at the same stall.", 3.2),
+  ("market", "Six months later, the book returned. Two new pages of handwriting.", 3.6, "Some friendships start in the margins.")],
+ ("bookrow", "Do you write in your books?", "Yes or no? 👇"),
+ f"A ₹40 book. Notes in the margins. \"If you're reading this, write back.\" 📖\n\nDo you write in your books? Yes or no 👇\n\n{APP_EN}\n\n{TAGS}")
+reel(days[5], "red-pen",
+ [("let3", "Every essay I wrote came back covered in red ink.", 3.2), ("clock", "Mrs. D'Souza. Class 9. I hated that red pen.", 3.0),
+  ("let2", "Last year I sent her my first published book.", 3.0), ("let1", "She posted it back. Every page marked. In red.", 3.4),
+  ("lib3", "On the last page: \"Finally. No corrections. Proud of you.\"", 3.6, "Some teachers never stop teaching.")],
+ ("let3", "Tag the teacher who made you a writer", "Tell them today ✍️"),
+ f"Every essay came back covered in red ink. Then I sent her my first book. ✍️\n\nTag the teacher who made you who you are 👇\n\n{APP_EN}\n\n#penastory #teachers #writersofinstagram #shortstory #indianauthors", music=1)
+reel(days[6], "recipe-book",
+ [("kitch", "Amma's recipe book had no measurements.", 3.0), ("kitch2", "\"Salt: enough.\" \"Chilli: depends on Nanna's mood.\"", 3.4),
+  ("let2", "After she passed, I tried to cook her rasam. It was never right.", 3.6), ("let3", "Then I found a note on the last page I'd never turned.", 3.0),
+  ("kitch", "\"The secret ingredient is: make it for someone you love.\"", 3.6, "It tasted right that night.")],
+ ("kitch2", "Which dish tastes like home to you?", "Tell us 🍲"),
+ f"Amma's recipe book had no measurements. Just one secret on the last page. 🍲\n\nWhich dish tastes like home to you? 👇\n\n{APP_EN}\n\n{TAGS}")
+reel(days[7], "3am-readers",
+ [("bedread", "Readers at 3 AM be like:", 2.6), ("bedread2", "\"One more chapter.\"", 2.4),
+  ("cofbk", "*Plot twist happens*", 2.4), ("teabk", "\"Okay, now I HAVE to finish it.\"", 2.8),
+  ("lib", "Sunrise. Book finished. Zero regrets. Slight regrets.", 3.2)],
+ ("bedread", "Tag your 3 AM reading partner", "We see you 😂"),
+ f"\"One more chapter\" at 3 AM hits different 😂\n\nTag your 3 AM reading partner 👇\n\n{APP_EN}\n\n#penastory #readermemes #booklovers #bookstagram #readersofinstagram", music=1)
+reel(days[8], "thatha-pages",
+ [("oldph", "Thatha wrote every night for fifty years.", 3.0, "A story"), ("let4", "Notebooks under the bed. 400 pages. Nobody read them.", 3.4),
+  ("gma1", "\"Who reads an old man's stories?\" he said.", 3.0), ("cofbk", "His granddaughter typed them up. One page a night.", 3.2),
+  ("lib3", "On his 80th birthday, she handed him a book with his name on the cover.", 3.8, "It's never too late to be an author.")],
+ ("let4", "Who in your family should write their story?", "Tag them 👇"),
+ f"Fifty years of notebooks under the bed. One granddaughter who typed every page. ✍️\n\nWho in your family should write their story? Tag them 👇 Want to publish your own book? DM us \"AUTHOR\".\n\n{APP_EN}\n\n#penastory #indianauthors #writersofinstagram #shortstory #storytelling")
+reel(days[9], "last-letter",
+ [("st1", "Platform No. 3. Ten days. One story.", 2.8), ("let1", "A letter from 1998. A sister nobody mentioned.", 3.2),
+  ("hills", "A school in the hills of Araku.", 2.8), ("let2", "Twenty-seven letters that were never posted.", 3.0),
+  ("diya2", "And one train that should have been missed.", 3.2, "The full serial is on our page.")],
+ ("st1", "Season 2? Comment YES", "Platform No. 3 · Pen A Story"),
+ f"10 days. One serial. A letter from 1998 that changed a family. 🚉\n\nThe full Platform No. 3 serial is on our page, in Telugu. Want Season 2 in English too? Comment YES 👇\n\n{APP_EN}\n\n#penastory #platformno3 #serialstory #shortstory #storytelling", music=1)
+print("EN half written")
+
+# ======================= Pen A Story books at the end of matching stories =======================
+def book(name, cover, title, small):
+    f = S / f"{name}.json"; d = json.loads(f.read_text()); d["images"].append(f"assets/covers/{cover}"); i = len(d["images"]) - 1
+    if d["kind"] == "reel": d["book"] = {"image": i, "text": title, "small": small}
+    else: d["slides"].append({"kind": "book", "image": i, "text": title, "small": small})
+    f.write_text(json.dumps(d, ensure_ascii=False, indent=1))
+book(f"{days[1]}-1800-reel-window-seat", "four-hearts.png", "Four Hearts, One Story", "Vishal Varshney · love, friendship, sacrifice")
+book(f"{days[3]}-1800-reel-power-cut", "camera-on-his-shoulder.png", "Camera on His Shoulder", "Jasveer Singh Dangi · the nostalgia our generation carries")
+book(f"{days[5]}-1800-reel-red-pen", "unseen-curriculum.jpg", "The Unseen Curriculum", "Vibhuti Vaid · what great teachers teach without a syllabus")
+book(f"{days[3]}-1930-story-umbrella", "love-that-lasts.png", "The Secret to Love That Lasts", "Sukanya Biswas · 60 exercises for a stronger relationship")
+book(f"{days[1]}-1930-story-tiffin-note", "2min-stories.jpg", "2Min Stories", "Surya Teja · పిల్లలకు నిద్రకు ముందు చిన్న కథలు")
+book(f"{days[5]}-1930-story-moon-call", "ramayana.jpg", "Ramayana", "Vamsi Krishna Dasari · అమ్మమ్మ కథలు, పిల్లల కోసం బొమ్మలతో")
+book(f"{days[1]}-1630-nostalgia-thirsty-crow", "suns-grove.jpg", "The Rise of Sun's Grove", "Surya Teja · అడవి కథలు, కొత్త తరం కోసం")
+book(f"{days[6]}-1630-nostalgia-monkey-crocodile", "2min-stories.jpg", "2Min Stories", "Surya Teja · రెండు నిమిషాల్లో ఒక కథ")
+print("books linked")

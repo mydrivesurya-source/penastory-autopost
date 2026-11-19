@@ -1,0 +1,45 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1748323123788-87a32949f4b0?w=1600&q=90",
+  "https://images.unsplash.com/photo-1596450513856-250e5f5c46cc?w=1600&q=90",
+  "https://images.unsplash.com/photo-1780536890742-a3d937535d66?w=1600&q=90",
+  "https://images.unsplash.com/photo-1528458965990-428de4b1cb0d?w=1600&q=90"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "Amma's recipe book had no measurements.",
+   "dur": 3.0
+  },
+  {
+   "image": 1,
+   "text": "\"Salt: enough.\" \"Chilli: depends on Nanna's mood.\"",
+   "dur": 3.4
+  },
+  {
+   "image": 2,
+   "text": "After she passed, I tried to cook her rasam. It was never right.",
+   "dur": 3.6
+  },
+  {
+   "image": 3,
+   "text": "Then I found a note on the last page I'd never turned.",
+   "dur": 3.0
+  },
+  {
+   "image": 0,
+   "text": "\"The secret ingredient is: make it for someone you love.\"",
+   "dur": 3.6,
+   "small": "It tasted right that night."
+  }
+ ],
+ "end": {
+  "image": 1,
+  "text": "Which dish tastes like home to you?",
+  "small": "Tell us 🍲"
+ },
+ "caption": "Amma's recipe book had no measurements. Just one secret on the last page. 🍲\n\nWhich dish tastes like home to you? 👇\n\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #shortstory #storytelling #readersofinstagram #bookstagramindia",
+ "music": 0
+}

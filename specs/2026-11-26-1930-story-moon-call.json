@@ -6,7 +6,8 @@
   "https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?w=1600&q=90",
   "https://images.unsplash.com/photo-1496813146940-1601b02f81a4?w=1600&q=90",
   "https://images.unsplash.com/photo-1532767153582-b1a0e5145009?w=1600&q=90",
-  "https://images.unsplash.com/photo-1528436610461-e9be9d1f7d6b?w=1600&q=90"
+  "https://images.unsplash.com/photo-1528436610461-e9be9d1f7d6b?w=1600&q=90",
+  "assets/covers/ramayana.jpg"
  ],
  "slides": [
   {
@@ -35,6 +36,12 @@
    "image": 2,
    "text": "మీ అమ్మమ్మ పాడిన పాట ఏది?",
    "small": "Comment లో రాయండి 🌕"
+  },
+  {
+   "kind": "book",
+   "image": 4,
+   "text": "Ramayana",
+   "small": "Vamsi Krishna Dasari · అమ్మమ్మ కథలు, పిల్లల కోసం బొమ్మలతో"
   }
  ],
  "caption": "Texas లో నేను. Rajahmundry లో అమ్మమ్మ. ఒకే చందమామ. 🌕\n\nఒక్క post లో పూర్తి కథ — చివరి వరకు swipe చేయండి.\n\nమీ అమ్మమ్మ పాడిన పాట ఏది? Comment లో రాయండి 🌕\n\nఈ కథ ఎవరికైనా గుర్తు చేస్తే, వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #shortstory #tenglish #storytelling"

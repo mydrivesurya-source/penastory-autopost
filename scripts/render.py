@@ -352,6 +352,8 @@ def grade(img, w=1080, h=1350, warm=1.0, dark=0.0):
 def photo_slide(s, imgs, idx, total, label=""):
     """Full-bleed graded photo, text low on the frame over a soft shadow gradient. s: image, text, small, kind(end)"""
     W, H = 1080, 1350; end = s.get("kind") == "end"
+    if s.get("kind") == "book":
+        return book_card(imgs[s["image"]], s.get("text", ""), s.get("small", ""), W, H, label)
     im = grade(imgs[s.get("image", 0)], W, H, dark=0.35 if end else 0.0).convert("RGBA")
     g = np.zeros((H, W, 4), np.uint8); t = np.clip((np.arange(H) - H * 0.38) / (H * 0.62), 0, 1) ** 1.4
     g[..., 3] = (t * (235 if not end else 200))[:, None]; im = Image.alpha_composite(im, Image.fromarray(g))
@@ -391,3 +393,91 @@ def photo_story(spec, imgs):
         d.rounded_rectangle((M, H - 330, M + tw + 80, H - 240), 45, fill=(232, 196, 110)); d.text((M + 40, H - 314), spec["cta"], font=f, fill=(20, 20, 24))
     logo(im, 96, "tr", 120)
     return im.convert("RGB")
+
+# ---------- cinematic photo reel ----------
+def photo_reel(spec, imgs, out, tmp):
+    """spec.beats: [{"image": i, "text": str, "dur": sec, "small": str?}]; spec.end: {"image","text","small"}.
+    Each beat: graded photo, slow push-in/drift, 0.6s crossfade, text rises in on the lower third. Original music bed."""
+    W, H, FPS, XF = 1080, 1920, 30, 0.6
+    beats = spec["beats"] + [dict(spec["end"], end=True, dur=spec["end"].get("dur", 4.0))]
+    big = []
+    if spec.get("book"):
+        bk = spec["book"]; beats.append({"image": bk["image"], "text": "", "dur": 3.6, "bookcard": True, "end": True})
+    for b in beats:   # graded frame at 116% so we can move inside it
+        if b.get("bookcard"):
+            bk = spec["book"]; g = book_card(imgs[bk["image"]], bk["text"], bk.get("small", ""), int(W * 1.16), int(H * 1.16), showlogo=False)
+        else:
+            g = grade(imgs[b["image"]], int(W * 1.16), int(H * 1.16), dark=0.45 if b.get("end") else 0.08)
+        big.append(g)
+    def text_layer(b):
+        if b.get("bookcard"): return Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        L = Image.new("RGBA", (W, H), (0, 0, 0, 0)); g = np.zeros((H, W, 4), np.uint8)
+        t = np.clip((np.arange(H) - H * 0.30) / (H * 0.55), 0, 1) ** 1.3; g[..., 3] = (np.minimum(t, 1) * 215)[:, None]
+        L = Image.alpha_composite(L, Image.fromarray(g)); d = ImageDraw.Draw(L); M = 90; MR = 190   # keep clear of IG buttons
+        end = b.get("end")
+        f1, L1, s1 = fit(d, b["text"], "head", W - M - MR, 640 if end else 520, 84 if end else (74 if b.get("first") else 64), 38, 1.32)
+        f2, L2, s2 = fit(d, b.get("small", ""), "ital", W - M - MR, 200, 44, 28, 1.3) if b.get("small") else (None, [], 0)
+        hgt = len(L1) * s1 * 1.32 + (len(L2) * s2 * 1.3 + 30 if L2 else 0)
+        y = (H - hgt) / 2 if end else H - 600 - hgt                     # above IG caption zone
+        al = "center" if end else "left"
+        for i, l in enumerate(L1):
+            x = M if al == "left" else (W - d.textlength(l, font=f1)) / 2
+            d.text((x + 2, y + i * s1 * 1.32 + 3), l, font=f1, fill=(0, 0, 0, 140)); d.text((x, y + i * s1 * 1.32), l, font=f1, fill=(255, 250, 240, 255))
+        y2 = y + len(L1) * s1 * 1.32 + 24
+        for i, l in enumerate(L2):
+            x = M if al == "left" else (W - d.textlength(l, font=f2)) / 2
+            d.text((x, y2 + i * s2 * 1.3), l, font=f2, fill=(236, 206, 140, 255))
+        return L
+    beats[0]["first"] = True
+    layers = [text_layer(b) for b in beats]
+    lg = logo(Image.new("RGBA", (W, H), (0, 0, 0, 0)), 100, "tr", 70)
+    starts = [0.0]
+    for b in beats[:-1]: starts.append(starts[-1] + float(b.get("dur", 3.2)))
+    total = starts[-1] + float(beats[-1]["dur"])
+    def frame_of(k, t):
+        b = big[k]; dur = float(beats[k].get("dur", 3.2)); p = min(1, max(0, t / (dur + XF)))
+        z = 1.0 + 0.10 * p if k % 2 == 0 else 1.10 - 0.08 * p            # alternate push-in / pull-out
+        cw, ch = int(b.width / 1.16 * (1.16 / z)), int(b.height / 1.16 * (1.16 / z))
+        dx = int((b.width - cw) * (0.5 + (0.18 if k % 3 == 0 else -0.18) * (p - 0.5))); dy = (b.height - ch) // 2
+        return b.crop((dx, dy, dx + cw, dy + ch)).resize((W, H), Image.BILINEAR)
+    ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
+                           "-c:v", "libx264", "-preset", "veryfast", "-crf", "19", "-pix_fmt", "yuv420p", f"{tmp}/v.mp4"], stdin=subprocess.PIPE)
+    for i in range(int(total * FPS)):
+        t = i / FPS; k = max(j for j in range(len(beats)) if starts[j] <= t); lt = t - starts[k]
+        fr = frame_of(k, lt).convert("RGBA")
+        if k + 1 < len(beats) and t > starts[k + 1] - XF:          # crossfade into next beat
+            a = (t - (starts[k + 1] - XF)) / XF
+            fr = Image.blend(fr, frame_of(k + 1, 0).convert("RGBA"), a)
+        dur = float(beats[k]["dur"]); ta = min(ease((lt - 0.15) / 0.5), 1 if beats[k].get("end") else ease((dur - XF - lt) / 0.35))
+        if ta > 0:
+            L = layers[k]; dy = int(26 * (1 - ease((lt - 0.15) / 0.6)))
+            if dy: L = L.transform(L.size, Image.AFFINE, (1, 0, 0, 0, 1, -dy))
+            if ta < 1: L = Image.fromarray((np.asarray(L) * np.array([1, 1, 1, ta])).astype(np.uint8))
+            fr = Image.alpha_composite(fr, L)
+        fr = Image.alpha_composite(fr, lg)
+        ff.stdin.write(fr.convert("RGB").tobytes())
+    ff.stdin.close(); ff.wait()
+    sr = 44100; a = music(total, sr, bpm=spec.get("bpm", 72), seed=spec.get("music", 0)) * 0.6
+    with wave.open(f"{tmp}/a.wav", "w") as w:
+        w.setnchannels(1); w.setsampwidth(2); w.setframerate(sr); w.writeframes((a * 32767).astype(np.int16).tobytes())
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{tmp}/v.mp4", "-i", f"{tmp}/a.wav", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k",
+                    "-shortest", "-movflags", "+faststart", out], check=True)
+    return total
+
+
+def book_card(cover, title, small, W, H, label="", showlogo=True):
+    """Real Pen A Story cover on a blurred, darkened copy of itself + one line + 'read on the app'."""
+    bg = grade(cover, W, H, dark=0.55).filter(ImageFilter.GaussianBlur(26)).convert("RGBA")
+    d = ImageDraw.Draw(bg); M = 90
+    if label:
+        f = font("bold", 26, label); d.text((M, 84), label, font=f, fill=(255, 244, 220, 230))
+    c = cover_card(cover, int(W * 0.56), int(H * 0.50)); bg.paste(c, ((W - c.width) // 2, int(H * 0.10)), c)
+    y = int(H * 0.10) + c.height - 10
+    f1, L1, s1 = fit(d, title, "head", W - 2 * M, 200, 58, 34, 1.3); y = block(d, M, y, L1, f1, s1, (255, 250, 240), "center", W - 2 * M, 1.3)
+    if small:
+        f2, L2, s2 = fit(d, small, "ital", W - 2 * M, 120, 36, 26, 1.3); y = block(d, M, y + 12, L2, f2, s2, (236, 206, 140), "center", W - 2 * M, 1.3)
+    t = "Read it on the Pen A Story app"; f = font("bold", 34, t); tw = d.textlength(t, font=f)
+    by = min(H - 200, y + 34); d.rounded_rectangle(((W - tw) / 2 - 40, by, (W + tw) / 2 + 40, by + 80), 40, fill=(232, 196, 110))
+    d.text(((W - tw) / 2, by + 18), t, font=f, fill=(20, 20, 24))
+    if showlogo: logo(bg, 70, "br", 56)
+    return bg.convert("RGB")

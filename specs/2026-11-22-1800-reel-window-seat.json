@@ -1,0 +1,52 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1726747062988-cd0b86c814e0?w=1600&q=90",
+  "https://images.unsplash.com/photo-1779635279571-988a2e63b549?w=1600&q=90",
+  "https://images.unsplash.com/photo-1599557832120-a73f36b8f37a?w=1600&q=90",
+  "https://images.unsplash.com/photo-1561812938-f6e60cbf95e3?w=1600&q=90",
+  "https://images.unsplash.com/photo-1764705448662-f74992067ff7?w=1600&q=90",
+  "assets/covers/four-hearts.png"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "Window seat. Hyderabad to Vizag. 12 hours with a stranger.",
+   "dur": 3.2
+  },
+  {
+   "image": 1,
+   "text": "She wrote in a notebook the whole way. He pretended not to look.",
+   "dur": 3.6
+  },
+  {
+   "image": 2,
+   "text": "Rajahmundry. The bridge. She tore out a page and handed it to him.",
+   "dur": 3.6
+  },
+  {
+   "image": 3,
+   "text": "It was a sketch of him, asleep. Under it: \"You snore. Nice to meet you.\"",
+   "dur": 4.0
+  },
+  {
+   "image": 4,
+   "text": "Vizag. She got off. He still has the page. Eleven years now.",
+   "dur": 3.4,
+   "small": "Some people stay for one journey. Some stay forever."
+  }
+ ],
+ "end": {
+  "image": 0,
+  "text": "Ever met someone on a train you never forgot?",
+  "small": "Tell us your train story"
+ },
+ "caption": "Window seat. 12 hours. A stranger with a notebook. 🚆\n\nEver met someone on a train you never forgot? Tell us 👇\n\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #shortstory #storytelling #readersofinstagram #bookstagramindia",
+ "music": 1,
+ "book": {
+  "image": 5,
+  "text": "Four Hearts, One Story",
+  "small": "Vishal Varshney · love, friendship, sacrifice"
+ }
+}

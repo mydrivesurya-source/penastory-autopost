@@ -1,0 +1,46 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1763688653741-bcc54bea7c26?w=1600&q=90",
+  "https://images.unsplash.com/photo-1779729739456-be9369745290?w=1600&q=90",
+  "https://images.unsplash.com/photo-1567960699877-b134ad1caef8?w=1600&q=90",
+  "https://images.unsplash.com/photo-1780536890742-a3d937535d66?w=1600&q=90",
+  "https://images.unsplash.com/photo-1605292356183-a77d0a9c9d1d?w=1600&q=90"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "Platform No. 3. Ten days. One story.",
+   "dur": 2.8
+  },
+  {
+   "image": 1,
+   "text": "A letter from 1998. A sister nobody mentioned.",
+   "dur": 3.2
+  },
+  {
+   "image": 2,
+   "text": "A school in the hills of Araku.",
+   "dur": 2.8
+  },
+  {
+   "image": 3,
+   "text": "Twenty-seven letters that were never posted.",
+   "dur": 3.0
+  },
+  {
+   "image": 4,
+   "text": "And one train that should have been missed.",
+   "dur": 3.2,
+   "small": "The full serial is on our page."
+  }
+ ],
+ "end": {
+  "image": 0,
+  "text": "Season 2? Comment YES",
+  "small": "Platform No. 3 · Pen A Story"
+ },
+ "caption": "10 days. One serial. A letter from 1998 that changed a family. 🚉\n\nThe full Platform No. 3 serial is on our page, in Telugu. Want Season 2 in English too? Comment YES 👇\n\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #platformno3 #serialstory #shortstory #storytelling",
+ "music": 1
+}

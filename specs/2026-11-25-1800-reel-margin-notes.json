@@ -1,0 +1,46 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=1600&q=90",
+  "https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=1600&q=90",
+  "https://images.unsplash.com/photo-1561812938-f6e60cbf95e3?w=1600&q=90",
+  "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=1600&q=90",
+  "https://images.unsplash.com/photo-1787044050216-19d30c0aeaf5?w=1600&q=90"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "A second-hand book. ₹40. Abids Sunday market.",
+   "dur": 3.0
+  },
+  {
+   "image": 1,
+   "text": "Someone had written in the margins. Funny notes. Sad ones.",
+   "dur": 3.4
+  },
+  {
+   "image": 2,
+   "text": "On the last page: \"If you're reading this, write back.\"",
+   "dur": 3.4
+  },
+  {
+   "image": 3,
+   "text": "So she did. And left the book back at the same stall.",
+   "dur": 3.2
+  },
+  {
+   "image": 4,
+   "text": "Six months later, the book returned. Two new pages of handwriting.",
+   "dur": 3.6,
+   "small": "Some friendships start in the margins."
+  }
+ ],
+ "end": {
+  "image": 0,
+  "text": "Do you write in your books?",
+  "small": "Yes or no? 👇"
+ },
+ "caption": "A ₹40 book. Notes in the margins. \"If you're reading this, write back.\" 📖\n\nDo you write in your books? Yes or no 👇\n\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #shortstory #storytelling #readersofinstagram #bookstagramindia",
+ "music": 0
+}

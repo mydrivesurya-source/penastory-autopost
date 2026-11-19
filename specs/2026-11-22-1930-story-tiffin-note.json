@@ -7,7 +7,8 @@
   "https://images.unsplash.com/photo-1528458965990-428de4b1cb0d?w=1600&q=90",
   "https://images.unsplash.com/photo-1596450513856-250e5f5c46cc?w=1600&q=90",
   "https://images.unsplash.com/photo-1511634829096-045a111727eb?w=1600&q=90",
-  "https://images.unsplash.com/photo-1561812938-f6e60cbf95e3?w=1600&q=90"
+  "https://images.unsplash.com/photo-1561812938-f6e60cbf95e3?w=1600&q=90",
+  "assets/covers/2min-stories.jpg"
  ],
  "slides": [
   {
@@ -40,6 +41,12 @@
    "image": 0,
    "text": "అమ్మ మీకు చెప్పిన ఒక మాట ఏది?",
    "small": "Comment చేయండి 👇"
+  },
+  {
+   "kind": "book",
+   "image": 5,
+   "text": "2Min Stories",
+   "small": "Surya Teja · పిల్లలకు నిద్రకు ముందు చిన్న కథలు"
   }
  ],
  "caption": "అమ్మ tiffin box లో ఒక చీటీ ఉండేది. 🍱\n\nఒక్క post లో పూర్తి కథ — చివరి వరకు swipe చేయండి.\n\nఅమ్మ మీకు చెప్పిన ఒక మాట ఏది? Comment చేయండి 👇\n\nఈ కథ ఎవరికైనా గుర్తు చేస్తే, వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #shortstory #tenglish #storytelling"

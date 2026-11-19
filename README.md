@@ -7,6 +7,7 @@ Claude writes specs, GitHub Actions builds the media and posts through the Insta
 |---|---|
 | 10:30 | Story: meme / mood / teaser (real photo) |
 | 13:00 | Carousel: **serial**, one continuing story, cliffhanger every day (Series 1: *Platform No. 3*, 21-30 Nov) |
+| 18:00 | **Reel** (English): cinematic photo reel, a complete micro-story, often ending on a real Pen A Story book |
 | 16:30 | Carousel rotation: **nostalgia** (Panchatantra, Tenali, Akbar-Birbal, Chandamama-style, retold), **reader memes**, **story quiz**, **author call-out**, **One Line. Your Turn.** |
 | 19:30 | Carousel: **standalone**, a complete short story in one post |
 | 21:30 | Story: tomorrow's serial teaser |
@@ -31,3 +32,7 @@ Plans live in `scripts/plan_*.py` (they write specs). Nothing from hold/ is ever
 ## Setup state
 - Secret `IG_TOKEN`: Pen A Story page token with instagram_basic, instagram_content_publish, pages_show_list, pages_read_engagement.
 - Variable `IG_USER_ID`: the pen_a_story Instagram business account ID (run `check.yml` to see it).
+
+## Pen A Story books (real covers in assets/covers)
+The Unseen Curriculum (Vibhuti Vaid) · Camera on His Shoulder (Jasveer Singh Dangi) · Four Hearts, One Story (Vishal Varshney) · Ramayana (Vamsi Krishna Dasari) · The Secret to Love That Lasts (Sukanya Biswas) · 2Min Stories (Surya Teja) · The Rise of Sun's Grove (Surya Teja) · ఈ 21వ శతాబ్దపు కొత్త రాజకీయ నీతి (Kanagiri SN Prasad).
+A story ends on a book only where the theme genuinely matches. Never claim a book is free.
