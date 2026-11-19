@@ -6,7 +6,7 @@ Claude writes specs, GitHub Actions builds the media and posts through the Insta
 | Time | Post |
 |---|---|
 | 10:30 | Story: meme / mood / teaser (real photo) |
-| 13:00 | Carousel: **serial**, one continuing story, cliffhanger every day (Series 1: *Platform No. 3*, 21-30 Nov) |
+| 13:00 | Carousel: **serial**, one continuing story, cliffhanger every day (Series 1: *Platform No. 3*, 20-29 Nov) |
 | 18:00 | **Reel** (English): cinematic photo reel, a complete micro-story, often ending on a real Pen A Story book |
 | 16:30 | Carousel rotation: **nostalgia** (Panchatantra, Tenali, Akbar-Birbal, Chandamama-style, retold), **reader memes**, **story quiz**, **author call-out**, **One Line. Your Turn.** |
 | 19:30 | Carousel: **standalone**, a complete short story in one post |
