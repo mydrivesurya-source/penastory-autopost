@@ -333,3 +333,41 @@ def reel(spec, imgs, out, tmp):
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", f"{tmp}/v.mp4", "-i", f"{tmp}/a.wav", "-c:v", "copy", "-c:a", "aac", "-b:a", "160k",
                     "-shortest", "-movflags", "+faststart", out], check=True)
     return total
+
+# ---------- photo story slides (editorial, real photography) ----------
+def grade(img, w=1080, h=1350, warm=1.0, dark=0.0):
+    """Cover-crop, then a soft film grade: lifted blacks, warm highlights, gentle fade, grain, vignette."""
+    sc = max(w / img.width, h / img.height)
+    im = img.resize((int(img.width * sc) + 1, int(img.height * sc) + 1), Image.LANCZOS)
+    im = im.crop(((im.width - w) // 2, (im.height - h) // 2, (im.width - w) // 2 + w, (im.height - h) // 2 + h))
+    a = np.asarray(im, float) / 255
+    a = 0.06 + a * 0.90                                     # lifted blacks / soft highlights
+    a[..., 0] *= 1 + 0.05 * warm; a[..., 2] *= 1 - 0.07 * warm
+    lum = a.mean(axis=2, keepdims=True); a = lum + (a - lum) * 0.85   # slight desaturation
+    yy, xx = np.mgrid[0:h, 0:w]; v = 1 - 0.35 * ((((xx - w / 2) / w) ** 2 + ((yy - h / 2) / h) ** 2) * 2.2)
+    a *= v[..., None] * (1 - dark)
+    a += np.random.default_rng(1).normal(0, 0.018, (h, w, 1))
+    return Image.fromarray((np.clip(a, 0, 1) * 255).astype(np.uint8))
+
+def photo_slide(s, imgs, idx, total, label=""):
+    """Full-bleed graded photo, text low on the frame over a soft shadow gradient. s: image, text, small, kind(end)"""
+    W, H = 1080, 1350; end = s.get("kind") == "end"
+    im = grade(imgs[s.get("image", 0)], W, H, dark=0.35 if end else 0.0).convert("RGBA")
+    g = np.zeros((H, W, 4), np.uint8); t = np.clip((np.arange(H) - H * 0.38) / (H * 0.62), 0, 1) ** 1.4
+    g[..., 3] = (t * (235 if not end else 200))[:, None]; im = Image.alpha_composite(im, Image.fromarray(g))
+    d = ImageDraw.Draw(im); M = 92; Wt = W - 2 * M
+    if label:
+        f = font("bold", 26, label); d.text((M, 84), label, font=f, fill=(255, 244, 220, 230))
+    text = s.get("text", ""); small = s.get("small", "")
+    kind = "head" if s.get("big") or idx == 0 or end else "body_serif"
+    f1, L1, s1 = fit(d, text, kind, Wt, 520, 76 if (idx == 0 or end) else 58, 34, 1.36)
+    f2, L2, s2 = fit(d, small, "ital", Wt, 160, 36, 26, 1.35) if small else (None, [], 0)
+    hgt = len(L1) * s1 * 1.36 + (len(L2) * s2 * 1.35 + 34 if L2 else 0)
+    y = (H - hgt) / 2 if end else H - 150 - hgt
+    y = block(d, M, y, L1, f1, s1, (255, 250, 240), "center" if end else "left", Wt, 1.36)
+    if L2:
+        block(d, M, y + 30, L2, f2, s2, (232, 208, 150), "center" if end else "left", Wt, 1.35)
+    if total > 1 and not end:
+        f = font("body", 24); tt = f"{idx + 1} / {total}"; d.text((W - M - d.textlength(tt, font=f), 88), tt, font=f, fill=(255, 244, 220, 200))
+    logo(im, 70, "br", 56)
+    return im.convert("RGB")

@@ -1,0 +1,47 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "PEN A STORY · ఒక్క కథ",
+ "images": [
+  "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1600&q=90",
+  "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=1600&q=90",
+  "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=1600&q=90",
+  "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1600&q=90",
+  "https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=1600&q=90",
+  "https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "ప్రతి Sunday. అదే library. అదే seat. అదే old man.",
+   "small": "ఒక్క కథ · The Library Card"
+  },
+  {
+   "image": 1,
+   "text": "Ravi కి 12 years. ఆ old man ప్రతి వారం Ravi చేతిలో ఒక book పెట్టేవాడు. \"Read చెయ్యి. Next week story నాకు చెప్పు.\""
+  },
+  {
+   "image": 2,
+   "text": "Detective stories. Ramayana. Space. Cricket. ప్రతి Sunday ఒక కొత్త world."
+  },
+  {
+   "image": 3,
+   "text": "ఒక Sunday, ఆ seat ఖాళీగా ఉంది. Librarian ఒక envelope ఇచ్చింది. పైన: \"For Ravi.\""
+  },
+  {
+   "image": 4,
+   "text": "లోపల ఆ old man library card. వెనకాల ఒకే line: \"ఇప్పుడు నీ వంతు. ఇంకొకరికి book ఇవ్వు.\""
+  },
+  {
+   "image": 5,
+   "text": "20 years later. అదే seat. Ravi ఒక 12-year-old చేతిలో book పెడుతూ: \"Read చెయ్యి. Next week story నాకు చెప్పు.\""
+  },
+  {
+   "kind": "end",
+   "image": 0,
+   "text": "మీకు first book ఎవరు ఇచ్చారు?",
+   "small": "Comment లో వాళ్ళని tag చేయండి"
+  }
+ ],
+ "caption": "ప్రతి Sunday. అదే library. అదే seat. అదే old man. 📚\n\nఒక్క post లో ఒక పూర్తి కథ — చివరి slide వరకు swipe చేయండి.\n\nSome people don't just give you a book. They give you a whole life of reading.\n\nమీకు first book ఎవరు ఇచ్చారు? Comment లో వాళ్ళని tag చేయండి 👇\n\nDaily stories in Telugu & English on the free Pen A Story app — link in bio.\n\n#penastory #telugustories #shortstory #booklovers #tenglish"
+}

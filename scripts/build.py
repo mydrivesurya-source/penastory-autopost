@@ -40,7 +40,10 @@ def build(spec_path):
         media = []
         for i, sl in enumerate(slides):
             out = MEDIA / f"{stem}-{i + 1}.jpg"
-            render.slide(sl, imgs, i, len(slides), s.get("series", ""), s.get("ep", 0)).save(out, quality=92)
+            if s.get("style") == "photo":
+                render.photo_slide(sl, imgs, i, len(slides), s.get("label", "")).save(out, quality=93)
+            else:
+                render.slide(sl, imgs, i, len(slides), s.get("series", ""), s.get("ep", 0)).save(out, quality=92)
             media.append(f"media/{out.name}")
         post = {"type": "carousel" if len(media) > 1 else "image", "caption": cap, "media": media}
     elif k == "reel":
