@@ -371,3 +371,23 @@ def photo_slide(s, imgs, idx, total, label=""):
         f = font("body", 24); tt = f"{idx + 1} / {total}"; d.text((W - M - d.textlength(tt, font=f), 88), tt, font=f, fill=(255, 244, 220, 200))
     logo(im, 70, "br", 56)
     return im.convert("RGB")
+
+def photo_story(spec, imgs):
+    """1080x1920 story: graded full-bleed photo, one big line (meme or teaser), optional small line and a pill CTA."""
+    W, H = 1080, 1920
+    im = grade(imgs[0], W, H, dark=0.15).convert("RGBA")
+    g = np.zeros((H, W, 4), np.uint8); t = np.clip((np.arange(H) - H * 0.30) / (H * 0.7), 0, 1) ** 1.2
+    g[..., 3] = (t * 225)[:, None]; im = Image.alpha_composite(im, Image.fromarray(g)); d = ImageDraw.Draw(im); M = 96
+    if spec.get("kicker"):
+        f = font("bold", 32, spec["kicker"]); d.text((M, 150), spec["kicker"], font=f, fill=(255, 238, 200))
+    f1, L1, s1 = fit(d, spec.get("title", ""), "head", W - 2 * M, 700, 86, 40, 1.3)
+    f2, L2, s2 = fit(d, spec.get("text", ""), "ital", W - 2 * M, 300, 44, 30, 1.35) if spec.get("text") else (None, [], 0)
+    hgt = len(L1) * s1 * 1.3 + (len(L2) * s2 * 1.35 + 40 if L2 else 0)
+    y = H - 430 - hgt
+    y = block(d, M, y, L1, f1, s1, (255, 250, 240), "left", W - 2 * M, 1.3)
+    if L2: block(d, M, y + 30, L2, f2, s2, (232, 208, 150), "left", W - 2 * M, 1.35)
+    if spec.get("cta"):
+        f = font("bold", 38, spec["cta"]); tw = d.textlength(spec["cta"], font=f)
+        d.rounded_rectangle((M, H - 330, M + tw + 80, H - 240), 45, fill=(232, 196, 110)); d.text((M + 40, H - 314), spec["cta"], font=f, fill=(20, 20, 24))
+    logo(im, 96, "tr", 120)
+    return im.convert("RGB")

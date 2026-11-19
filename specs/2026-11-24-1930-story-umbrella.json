@@ -1,0 +1,41 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "PEN A STORY · ఒక్క కథ",
+ "images": [
+  "https://images.unsplash.com/photo-1576514864427-f0809d2b66eb?w=1600&q=90",
+  "https://images.unsplash.com/photo-1470432581262-e7880e8fe79a?w=1600&q=90",
+  "https://images.unsplash.com/photo-1511634829096-045a111727eb?w=1600&q=90",
+  "https://images.unsplash.com/photo-1774904721886-7b3abd03be14?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "Koti bus stop. July. ఉరుములతో వర్షం.",
+   "small": "ఒక్క కథ · One Umbrella"
+  },
+  {
+   "image": 1,
+   "text": "ఒక stranger తన umbrella లో చోటు ఇచ్చాడు. 20 minutes. ఇద్దరూ ఒక్క మాట మాట్లాడలేదు."
+  },
+  {
+   "image": 2,
+   "text": "Bus వచ్చింది. ఆమె ఎక్కింది. Umbrella అతని దగ్గరే ఉంది. పేరు కూడా అడగలేదు."
+  },
+  {
+   "image": 3,
+   "text": "ప్రతి వర్షాకాలం అతను అదే bus stop కి వెళ్ళేవాడు. Just in case."
+  },
+  {
+   "image": 0,
+   "text": "7th year. ఒక అమ్మాయి వచ్చి నిలబడింది. చేతిలో ఒక umbrella. \"ఇది తిరిగి ఇవ్వడానికి 7 years పట్టింది.\""
+  },
+  {
+   "kind": "end",
+   "image": 1,
+   "text": "Rain అంటే మీకు గుర్తొచ్చే memory ఏది?",
+   "small": "Comment చేయండి ☔"
+  }
+ ],
+ "caption": "Koti bus stop. ఒక వర్షం. ఒక umbrella. ☔\n\nఒక్క post లో పూర్తి కథ — చివరి వరకు swipe చేయండి.\n\nRain అంటే మీకు గుర్తొచ్చే memory ఏది? Comment చేయండి ☔\n\nఈ కథ ఎవరికైనా గుర్తు చేస్తే, వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #shortstory #tenglish #storytelling"
+}

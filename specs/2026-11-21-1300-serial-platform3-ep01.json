@@ -1,0 +1,43 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "PLATFORM NO. 3 · సీరియల్",
+ "images": [
+  "https://images.unsplash.com/photo-1763688653741-bcc54bea7c26?w=1600&q=90",
+  "https://images.unsplash.com/photo-1771308134963-9ffb3abb2471?w=1600&q=90",
+  "https://images.unsplash.com/photo-1779729739456-be9369745290?w=1600&q=90",
+  "https://images.unsplash.com/photo-1528458965990-428de4b1cb0d?w=1600&q=90",
+  "https://images.unsplash.com/photo-1743947830042-52acbb973f2d?w=1600&q=90",
+  "https://images.unsplash.com/photo-1764705448662-f74992067ff7?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "Secunderabad station. రాత్రి 9 గంటలు. Meera, 27, Vizag కి 9:40 train కోసం wait చేస్తోంది.",
+   "small": "Episode 1"
+  },
+  {
+   "image": 1,
+   "text": "Waiting room bench మీద ఎవరో మర్చిపోయిన ఒక పాత book."
+  },
+  {
+   "image": 2,
+   "text": "Book లోపల ఒక పసుపు రంగు envelope. పైన రాసి ఉంది: \"To Meera.\""
+  },
+  {
+   "image": 3,
+   "text": "Postmark: 1998. Meera పుట్టింది 1999లో."
+  },
+  {
+   "image": 4,
+   "text": "లోపల ఒక్కటే line: \"Meera, 9:40 train ఎక్కకు.\""
+  },
+  {
+   "kind": "end",
+   "image": 5,
+   "text": "మీరైతే ఆ train ఎక్కుతారా?",
+   "small": "Episode 2 — రేపు 1 PM"
+  }
+ ],
+ "caption": "Platform No. 3 · Episode 1 🚉\n\nSecunderabad station. రాత్రి 9 గంటలు. Meera, 27, Vizag కి 9:40 train కోసం wait చేస్తోంది.\n\nSwipe చేయండి — చివరి slide లో cliffhanger.\n\nప్రతి రోజు 1 PM కి కొత్త episode. Miss అవ్వకుండా follow చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #platformno3 #telugustories #teluguserial #tenglish"
+}

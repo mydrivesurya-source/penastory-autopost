@@ -1,0 +1,42 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "PEN A STORY · ఒక్క కథ",
+ "images": [
+  "https://images.unsplash.com/photo-1706102005390-2d1f41fdddcd?w=1600&q=90",
+  "https://images.unsplash.com/photo-1706038416284-6c51d61e2f54?w=1600&q=90",
+  "https://images.unsplash.com/photo-1583008520412-7ee838891ada?w=1600&q=90",
+  "https://images.unsplash.com/photo-1783534784717-0843229c4f89?w=1600&q=90",
+  "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "1996. మా గల్లీ cricket. Last ball. 6 runs కావాలి.",
+   "small": "ఒక్క కథ · The Window"
+  },
+  {
+   "image": 1,
+   "text": "నేను బలంగా కొట్టాను. Ball నేరుగా Sharma uncle window లోకి. Crash."
+  },
+  {
+   "image": 2,
+   "text": "అందరూ పారిపోయారు. Uncle ball ఇవ్వలేదు. మళ్ళీ ఎప్పుడూ."
+  },
+  {
+   "image": 3,
+   "text": "2026. Uncle పోయారు. వాళ్ళ అబ్బాయి ఒక box ఇచ్చాడు: \"నాన్న నీ కోసం ఉంచారు.\""
+  },
+  {
+   "image": 4,
+   "text": "లోపల ఆ ball. దాని మీద marker తో: \"Best six I ever saw. — Sharma, 1996.\""
+  },
+  {
+   "kind": "end",
+   "image": 0,
+   "text": "మీ childhood లో break చేసిన window ఏది? 😄",
+   "small": "Confess చేయండి 👇"
+  }
+ ],
+ "caption": "Last ball. 6 runs. ఒక window. 🏏\n\nఒక్క post లో పూర్తి కథ — చివరి వరకు swipe చేయండి.\n\nమీ childhood లో break చేసిన window ఏది? 😄 Confess చేయండి 👇\n\nఈ కథ ఎవరికైనా గుర్తు చేస్తే, వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #shortstory #tenglish #storytelling"
+}

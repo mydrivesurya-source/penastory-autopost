@@ -1,0 +1,41 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "PEN A STORY · ఒక్క కథ",
+ "images": [
+  "https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?w=1600&q=90",
+  "https://images.unsplash.com/photo-1496813146940-1601b02f81a4?w=1600&q=90",
+  "https://images.unsplash.com/photo-1532767153582-b1a0e5145009?w=1600&q=90",
+  "https://images.unsplash.com/photo-1528436610461-e9be9d1f7d6b?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "\"చందమామ రావే, జాబిల్లి రావే...\" అమ్మమ్మ ప్రతి రాత్రి ఇదే పాడేది.",
+   "small": "ఒక్క కథ · Same Moon"
+  },
+  {
+   "image": 1,
+   "text": "Terrace మీద. గోరుముద్దలు. Moon వైపు చూపిస్తూ కథలు."
+  },
+  {
+   "image": 2,
+   "text": "ఇప్పుడు నేను Texas లో. అమ్మమ్మ Rajahmundry లో. 13,000 km."
+  },
+  {
+   "image": 3,
+   "text": "ప్రతి పౌర్ణమి రాత్రి నేను video call చేస్తాను."
+  },
+  {
+   "image": 0,
+   "text": "ఇద్దరం camera ని moon వైపు తిప్పుతాం. \"చూశావా? అదే చందమామ.\""
+  },
+  {
+   "kind": "end",
+   "image": 2,
+   "text": "మీ అమ్మమ్మ పాడిన పాట ఏది?",
+   "small": "Comment లో రాయండి 🌕"
+  }
+ ],
+ "caption": "Texas లో నేను. Rajahmundry లో అమ్మమ్మ. ఒకే చందమామ. 🌕\n\nఒక్క post లో పూర్తి కథ — చివరి వరకు swipe చేయండి.\n\nమీ అమ్మమ్మ పాడిన పాట ఏది? Comment లో రాయండి 🌕\n\nఈ కథ ఎవరికైనా గుర్తు చేస్తే, వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #shortstory #tenglish #storytelling"
+}

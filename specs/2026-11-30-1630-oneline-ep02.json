@@ -1,0 +1,28 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "ONE LINE. YOUR TURN. · EP 02",
+ "images": [
+  "https://images.unsplash.com/photo-1653494656006-869fdf081d42?w=1600&q=90",
+  "https://images.unsplash.com/photo-1511634829096-045a111727eb?w=1600&q=90",
+  "https://images.unsplash.com/photo-1470432581262-e7880e8fe79a?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "మేము మొదటి line రాస్తాం. Second line మీది.",
+   "small": "Episode 2"
+  },
+  {
+   "image": 1,
+   "text": "\"ఆ రాత్రి power పోయింది. చీకట్లో ఎవరో నా పేరు పిలిచారు — నా గొంతుతోనే.\""
+  },
+  {
+   "kind": "end",
+   "image": 2,
+   "text": "తర్వాత ఏమైంది? మీ line రాయండి",
+   "small": "Most-liked line wins 🏆"
+  }
+ ],
+ "caption": "\"ఆ రాత్రి power పోయింది. చీకట్లో ఎవరో నా పేరు పిలిచారు — నా గొంతుతోనే.\" 🕯️\n\nSecond line మీది. Comment లో రాయండి. Most-liked line wins. 🏆\n\n#penastory #onelineyourturn #writingprompt #telugustories #horrorstory"
+}

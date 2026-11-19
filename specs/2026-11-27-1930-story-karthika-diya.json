@@ -1,0 +1,41 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "PEN A STORY · ఒక్క కథ",
+ "images": [
+  "https://images.unsplash.com/photo-1794550399755-2e72c031cca2?w=1600&q=90",
+  "https://images.unsplash.com/photo-1533128361669-69c065857a13?w=1600&q=90",
+  "https://images.unsplash.com/photo-1605292356183-a77d0a9c9d1d?w=1600&q=90",
+  "https://images.unsplash.com/photo-1583008520412-7ee838891ada?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "Karthika masam. ప్రతి సాయంత్రం Savitri gaaru గడప దగ్గర ఒక దీపం పెడతారు.",
+   "small": "ఒక్క కథ · The Diya"
+  },
+  {
+   "image": 1,
+   "text": "\"ఎవరి కోసం?\" అని పక్కింటి అమ్మాయి అడిగింది. \"Germany లో మా అబ్బాయి కోసం.\""
+  },
+  {
+   "image": 2,
+   "text": "\"దీపం ఆరకుండా ఉంటే, వాడికి దారి కనిపిస్తుంది.\""
+  },
+  {
+   "image": 3,
+   "text": "30 రోజులు. 30 దీపాలు. ఒక్కసారీ ఆరలేదు."
+  },
+  {
+   "image": 0,
+   "text": "కార్తీక పౌర్ణమి రాత్రి గేటు చప్పుడు. చేతిలో suitcase. \"అమ్మా, దారి కనిపించింది.\""
+  },
+  {
+   "kind": "end",
+   "image": 2,
+   "text": "మీ ఇంట్లో ఎవరు దీపం పెడతారు?",
+   "small": "Comment చేయండి 🪔"
+  }
+ ],
+ "caption": "Karthika masam. ఒక దీపం. ఒక అమ్మ. 🪔\n\nఒక్క post లో పూర్తి కథ — చివరి వరకు swipe చేయండి.\n\nమీ ఇంట్లో ఎవరు దీపం పెడతారు? Comment చేయండి 🪔\n\nఈ కథ ఎవరికైనా గుర్తు చేస్తే, వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #shortstory #tenglish #storytelling"
+}

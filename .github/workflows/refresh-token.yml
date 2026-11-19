@@ -1,0 +1,49 @@
+name: Refresh Instagram token
+# Instagram-login long-lived tokens last 60 days (and must be 24h+ old to refresh); refreshing every week keeps them alive forever.
+# If Instagram returns a different token string, it is written back to the IG_TOKEN secret using the
+# GH_PAT secret (fine-grained PAT with "Secrets: read and write" on this repo). Without GH_PAT the run
+# fails loudly so the daily report flags it.
+on:
+  schedule: [{cron: "17 3 * * 1"}]   # Mondays 08:47 IST
+  workflow_dispatch:
+permissions: {contents: write}
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install -q pynacl
+      - name: Refresh
+        env:
+          T: ${{ secrets.IG_TOKEN }}
+          GH_PAT: ${{ secrets.GH_PAT }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, base64, datetime, pathlib
+          t = os.environ["T"]
+          r = json.load(urllib.request.urlopen(f"https://graph.instagram.com/refresh_access_token?grant_type=ig_refresh_token&access_token={t}"))
+          new, days = r["access_token"], r.get("expires_in", 0) // 86400
+          st = {"refreshed_at": datetime.datetime.utcnow().isoformat() + "Z", "valid_days": days, "changed": new != t}
+          if new != t:
+              pat = os.environ.get("GH_PAT")
+              if not pat:
+                  st["error"] = "token changed but GH_PAT secret missing - IG_TOKEN not updated"
+              else:
+                  from nacl import encoding, public
+                  H = {"Authorization": f"Bearer {pat}", "Accept": "application/vnd.github+json"}
+                  api = f"https://api.github.com/repos/{os.environ['REPO']}/actions/secrets"
+                  k = json.load(urllib.request.urlopen(urllib.request.Request(api + "/public-key", headers=H)))
+                  box = public.SealedBox(public.PublicKey(k["key"].encode(), encoding.Base64Encoder()))
+                  body = json.dumps({"encrypted_value": base64.b64encode(box.encrypt(new.encode())).decode(), "key_id": k["key_id"]}).encode()
+                  urllib.request.urlopen(urllib.request.Request(api + "/IG_TOKEN", data=body, headers=H, method="PUT"))
+                  st["secret_updated"] = True
+          pathlib.Path("status").mkdir(exist_ok=True); pathlib.Path("status/token.json").write_text(json.dumps(st, indent=1))
+          print(st)
+          if st.get("error"): raise SystemExit(st["error"])
+          PY
+      - name: Save status
+        if: always()
+        run: |
+          git config user.name "pas-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -A status && git commit -qm "Token refresh status" && git pull -q --rebase && git push -q || echo "nothing"

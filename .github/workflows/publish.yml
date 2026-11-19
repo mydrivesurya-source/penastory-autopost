@@ -1,5 +1,11 @@
 name: Build and publish to Instagram
 on:
+  schedule:            # backup triggers (keeper.yml is the main 10-minute trigger)
+    - cron: "5 5 * * *"     # 10:35 IST
+    - cron: "35 7 * * *"    # 13:05 IST
+    - cron: "5 11 * * *"    # 16:35 IST
+    - cron: "5 14 * * *"    # 19:35 IST
+    - cron: "5 16 * * *"    # 21:35 IST
   push:
     paths: ["specs/**", "scripts/**", "control/**"]
   workflow_dispatch:
@@ -33,6 +39,14 @@ jobs:
           P=$(head -1 control/publish-now.txt | tr -d '[:space:]')
           sleep 20 && python scripts/publish.py "$P"
           git rm -q control/publish-now.txt
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ vars.IG_USER_ID }}
+      - name: Stats for the daily report (every run after 21:40 IST, once)
+        if: github.event_name != 'push'
+        run: |
+          m=$(( ( $(date -u +%s) / 60 + 330 ) % 1440 ))
+          if [ $m -ge 1300 ] && [ "$(date -u +%F)" != "$(cat status/stats_day 2>/dev/null)" ]; then python scripts/stats.py && date -u +%F > status/stats_day; fi
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ vars.IG_USER_ID }}

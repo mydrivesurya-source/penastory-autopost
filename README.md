@@ -3,14 +3,16 @@ Automated Instagram publishing for **@pen_a_story**. This repo is separate from 
 Claude writes specs, GitHub Actions builds the media and posts through the Instagram Graph API. No laptop needed.
 
 ## Daily rhythm (IST)
-| Time | Post | Notes |
-|---|---|---|
-| 10:30 | Story | teaser for the day's reel or a puzzle answer |
-| 13:00 | Carousel | **Six Frames**: a complete short story in 6 book pages, daily. Sun = *One Line. Your Turn.* Tue = *Solve the Case* |
-| 19:30 | Reel | kinetic story reel ending on the real book cover, or a video Surya shared |
-| 21:30 | Story | reshare of the day's reel |
+| Time | Post |
+|---|---|
+| 10:30 | Story: meme / mood / teaser (real photo) |
+| 13:00 | Carousel: **serial**, one continuing story, cliffhanger every day (Series 1: *Platform No. 3*, 21-30 Nov) |
+| 16:30 | Carousel rotation: **nostalgia** (Panchatantra, Tenali, Akbar-Birbal, Chandamama-style, retold), **reader memes**, **story quiz**, **author call-out**, **One Line. Your Turn.** |
+| 19:30 | Carousel: **standalone**, a complete short story in one post |
+| 21:30 | Story: tomorrow's serial teaser |
 
-Language mix: about 50% Telugu, 50% English. Telugu real-story reels are the account's proven winners (Indian Cyclist Telugu: 23K–112K views vs ~300–1,400 for designed announcement reels, Nov 2026).
+Look: real photography (Unsplash, free licence), soft film grade, Telugu + English mixed in natural speech, minimal text low on the frame, small logo. No coloured template cards.
+Plans live in `scripts/plan_*.py` (they write specs). Nothing from hold/ is ever published.
 
 ## Standing rules
 - Value first: hook → story or problem → why it matters → book → soft CTA. Never just "buy".
@@ -18,7 +20,6 @@ Language mix: about 50% Telugu, 50% English. Telugu real-story reels are the acc
 - **Never use the Winternight or Limitless covers**: they show other publishers' books (*The Bear and the Nightingale* by Katherine Arden; a Robert J. Crane title).
 - Max 5 hashtags (Instagram's limit). Never pitch "less screen time" (it's an eBook app).
 - Music in reels is synthesised in `render.py` (original, copyright-free). Trending audio can't be added through the API.
-- Look: editorial book-page design. Cream paper pages, Playfair Display + Lato, Noto Serif Telugu, one deep colour per episode, gold inset frame.
 - Don't change posts that are already queued; add new ones around them.
 
 ## Layout

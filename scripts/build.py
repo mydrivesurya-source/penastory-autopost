@@ -69,7 +69,8 @@ def build(spec_path):
         if s.get("video"):
             post = {"type": "story", "media": [s["video"]]}
         else:
-            out = MEDIA / f"{stem}.jpg"; render.story(s, imgs).save(out, quality=92)
+            out = MEDIA / f"{stem}.jpg"
+            (render.photo_story(s, imgs) if s.get("style") == "photo" else render.story(s, imgs)).save(out, quality=92)
             post = {"type": "story", "media": [f"media/{out.name}"]}
     else:
         raise SystemExit(f"unknown kind {k}")

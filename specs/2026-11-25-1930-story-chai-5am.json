@@ -1,0 +1,46 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "PEN A STORY · ఒక్క కథ",
+ "images": [
+  "https://images.unsplash.com/photo-1792143663827-c77f1c1f2d71?w=1600&q=90",
+  "https://images.unsplash.com/photo-1787399087896-fff638c01a2b?w=1600&q=90",
+  "https://images.unsplash.com/photo-1786161320176-96236ee66981?w=1600&q=90",
+  "https://images.unsplash.com/photo-1774904721886-7b3abd03be14?w=1600&q=90",
+  "https://images.unsplash.com/photo-1653495482648-0cfd8847bb11?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "Narayana chai stall. ఉదయం 5 గంటలు. 30 years.",
+   "small": "ఒక్క కథ · The 5 AM Chai"
+  },
+  {
+   "image": 1,
+   "text": "ఆయనకి అందరి order గుర్తు. Auto drivers కి strong. Students కి extra sugar."
+  },
+  {
+   "image": 2,
+   "text": "ఒక old man రోజూ వచ్చేవాడు. ఒకే chai. ఒకే corner. ఎప్పుడూ ఒంటరిగా."
+  },
+  {
+   "image": 3,
+   "text": "ఒక రోజు ఆయన రాలేదు. రెండో రోజు కూడా. మూడో రోజు Narayana stall మూసేశాడు."
+  },
+  {
+   "image": 4,
+   "text": "Flask పట్టుకుని old man ఇంటికి వెళ్ళాడు. జ్వరం. ఒంటరిగా."
+  },
+  {
+   "image": 0,
+   "text": "\"మీ chai రాలేదు అంటే, ఏదో తేడా ఉందని తెలుసు.\" కొన్ని relationships కి పేరు అవసరం లేదు."
+  },
+  {
+   "kind": "end",
+   "image": 2,
+   "text": "మీ favourite chai stall ఎక్కడ?",
+   "small": "Tag చేయండి ☕"
+  }
+ ],
+ "caption": "ఉదయం 5. ఒక chai stall. ఒక old man. ☕\n\nఒక్క post లో పూర్తి కథ — చివరి వరకు swipe చేయండి.\n\nమీ favourite chai stall ఎక్కడ? Tag చేయండి ☕\n\nఈ కథ ఎవరికైనా గుర్తు చేస్తే, వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #shortstory #tenglish #storytelling"
+}

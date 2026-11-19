@@ -1,0 +1,41 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "చిన్నప్పటి కథలు · NOSTALGIA",
+ "images": [
+  "https://images.unsplash.com/photo-1751963442555-38e8d2ddcddd?w=1600&q=90",
+  "https://images.unsplash.com/photo-1685293080597-5d3526faf88e?w=1600&q=90",
+  "https://images.unsplash.com/photo-1694614360428-608d018bb054?w=1600&q=90",
+  "https://images.unsplash.com/photo-1505221594957-3931cba3a090?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "నది ఒడ్డున ఒక నేరేడు చెట్టు. దాని మీద ఒక కోతి. రోజూ ఒక మొసలికి పండ్లు ఇచ్చేది.",
+   "small": "కోతి – మొసలి"
+  },
+  {
+   "image": 1,
+   "text": "మొసలి భార్య అంది: \"ఇంత తీపి పండ్లు తినే కోతి గుండె ఇంకా తీపిగా ఉంటుంది. తీసుకురా.\""
+  },
+  {
+   "image": 2,
+   "text": "మొసలి కోతిని వీపు మీద ఎక్కించుకుని నది మధ్యకి తీసుకెళ్ళి నిజం చెప్పింది."
+  },
+  {
+   "image": 3,
+   "text": "కోతి నవ్వింది: \"అయ్యో! నా గుండె చెట్టు మీదే వదిలేశాను. వెనక్కి పద, తెచ్చిస్తా.\""
+  },
+  {
+   "image": 0,
+   "text": "ఒడ్డుకి చేరగానే కోతి చెట్టెక్కేసింది. Moral: ఆపదలో కూడా ప్రశాంతంగా ఆలోచించు."
+  },
+  {
+   "kind": "end",
+   "image": 3,
+   "text": "Panchatantra లో మీ favourite కథ?",
+   "small": "Comment చేయండి 🐒"
+  }
+ ],
+ "caption": "కోతి – మొసలి 🐒🐊 Panchatantra గుర్తుందా?\n\nచిన్నప్పుడు అమ్మమ్మ, తాతయ్య, Chandamama చెప్పిన కథలు — మళ్ళీ ఒకసారి.\n\nPanchatantra లో మీ favourite కథ?\n\nమీ childhood friend ని tag చేయండి — వాళ్ళకీ గుర్తొస్తుంది.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #childhoodmemories #telugukathalu #panchatantra #nostalgia"
+}

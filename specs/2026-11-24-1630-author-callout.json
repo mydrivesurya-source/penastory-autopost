@@ -1,0 +1,32 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "CALLING ALL WRITERS · రచయితలకు",
+ "images": [
+  "https://images.unsplash.com/photo-1561812938-f6e60cbf95e3?w=1600&q=90",
+  "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=1600&q=90",
+  "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "మీ దగ్గర ఒక కథ ఉందా? Notebook లో, phone notes లో, మనసులో?",
+   "small": "Calling all writers"
+  },
+  {
+   "image": 1,
+   "text": "Telugu లో అయినా, English లో అయినా — Pen A Story మీ book ని publish చేస్తుంది. Free of cost."
+  },
+  {
+   "image": 2,
+   "text": "మీ book 175+ countries లో readers కి చేరుతుంది."
+  },
+  {
+   "kind": "end",
+   "image": 0,
+   "text": "DM చేయండి: AUTHOR",
+   "small": "మీ మొదటి book ఇక్కడ మొదలవ్వచ్చు"
+  }
+ ],
+ "caption": "మీ దగ్గర ఒక కథ ఉందా? ✍️\n\nTelugu లో అయినా, English లో అయినా — Pen A Story మీ eBook ని publish చేస్తుంది, free of cost. 175+ countries లో readers.\n\nInterested? \"AUTHOR\" అని DM చేయండి. Writer friend ని tag చేయండి 👇\n\n#penastory #teluguwriters #indianauthors #publishyourbook #writersofinstagram"
+}

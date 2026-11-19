@@ -1,0 +1,28 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "ONE LINE. YOUR TURN. · EP 01",
+ "images": [
+  "https://images.unsplash.com/photo-1779729739456-be9369745290?w=1600&q=90",
+  "https://images.unsplash.com/photo-1764705448662-f74992067ff7?w=1600&q=90",
+  "https://images.unsplash.com/photo-1528458965990-428de4b1cb0d?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "మేము మొదటి line రాస్తాం. Second line మీది.",
+   "small": "How to play"
+  },
+  {
+   "image": 1,
+   "text": "\"ఆ letter ఒక Tuesday వచ్చింది. దాని మీద date — next year.\""
+  },
+  {
+   "kind": "end",
+   "image": 2,
+   "text": "తర్వాత ఏమైంది? Next line మీరు రాయండి",
+   "small": "Most-liked line wins 🏆"
+  }
+ ],
+ "caption": "\"ఆ letter ఒక Tuesday వచ్చింది. దాని మీద date — next year.\" ✉️\n\nFirst line మాది. Second line మీది — comment లో రాయండి (Telugu, English, ఏ language అయినా).\n\nMost-liked line wins. 🏆\n\n#penastory #onelineyourturn #writingprompt #telugustories #storytelling"
+}

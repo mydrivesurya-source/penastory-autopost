@@ -1,0 +1,36 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "STORY QUIZ · కథ కనుక్కోండి",
+ "images": [
+  "https://images.unsplash.com/photo-1694614360428-608d018bb054?w=1600&q=90",
+  "https://images.unsplash.com/photo-1685293080597-5d3526faf88e?w=1600&q=90",
+  "https://images.unsplash.com/photo-1505221594957-3931cba3a090?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "3 clues. ఒక్క కథ. Guess చేయగలరా?",
+   "small": "Story Quiz #1"
+  },
+  {
+   "image": 1,
+   "text": "Clue 1: ఒక నది."
+  },
+  {
+   "image": 0,
+   "text": "Clue 2: ఒక చెట్టు మీద తీపి పండ్లు."
+  },
+  {
+   "image": 2,
+   "text": "Clue 3: \"నా గుండె చెట్టు మీదే వదిలేశాను.\""
+  },
+  {
+   "kind": "end",
+   "image": 1,
+   "text": "ఏ కథ? Comment చేయండి",
+   "small": "Answer రేపు story లో"
+  }
+ ],
+ "caption": "3 clues. ఒక్క కథ. 🔍\n\nనది. తీపి పండ్లు. \"నా గుండె చెట్టు మీదే వదిలేశాను.\"\n\nఏ కథో comment చేయండి — answer రేపు story లో. 90s kids కి easy 😉\n\n#penastory #storyquiz #panchatantra #telugukathalu #childhoodmemories"
+}
