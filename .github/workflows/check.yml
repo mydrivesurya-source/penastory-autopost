@@ -1,0 +1,13 @@
+name: Check Instagram connection
+on: workflow_dispatch
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          G=https://graph.facebook.com/v21.0
+          echo "--- token"; curl -s "$G/debug_token?input_token=$T&access_token=$T" | python3 -c "import json,sys;d=json.load(sys.stdin).get('data',{});print({k:d.get(k) for k in ['type','is_valid','expires_at','data_access_expires_at','scopes']})"
+          echo "--- pages and their Instagram accounts (copy the pen_a_story id into the IG_USER_ID variable)"
+          curl -s "$G/me/accounts?fields=name,instagram_business_account{id,username}&access_token=$T"; echo
+        env:
+          T: ${{ secrets.IG_TOKEN }}

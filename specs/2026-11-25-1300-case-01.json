@@ -1,0 +1,46 @@
+{
+ "kind": "carousel",
+ "ep": 4,
+ "series": "Solve the Case · #01",
+ "images": [],
+ "slides": [
+  {
+   "kind": "hook",
+   "title": "Three suspects. One stolen ring. Only one detail gives the thief away.",
+   "lines": [
+    "Read every slide carefully."
+   ]
+  },
+  {
+   "kind": "frame",
+   "n": 1,
+   "title": "Meera, the cook: \"I was in the kitchen. The milk boiled over at 8:15, I was cleaning it.\""
+  },
+  {
+   "kind": "frame",
+   "n": 2,
+   "title": "Arjun, the driver: \"I was washing the car. It was so sunny, I finished by 8.\""
+  },
+  {
+   "kind": "frame",
+   "n": 3,
+   "title": "Sita, the neighbour: \"I came at 9 for sugar. The ring was already missing.\""
+  },
+  {
+   "kind": "frame",
+   "n": 4,
+   "title": "The ring vanished between 8 and 8:30 PM.",
+   "lines": [
+    "One statement can't be true."
+   ]
+  },
+  {
+   "kind": "cta",
+   "title": "Who did it? Comment the name.",
+   "lines": [
+    "Answer revealed in tomorrow's Story."
+   ]
+  }
+ ],
+ "caption": "Three suspects. One stolen ring. One detail gives the thief away. 🔍\n\nSwipe through every statement, then comment the name of the thief. Answer in tomorrow's Story.\n\nSave this to test a friend 🔖\n\n📲 Free Pen A Story app: link in bio (Android + iPhone)\n\n#penastory #solvethecase #mystery #puzzle #detective"
+}

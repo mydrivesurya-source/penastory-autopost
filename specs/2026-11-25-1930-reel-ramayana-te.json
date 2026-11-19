@@ -1,0 +1,36 @@
+{
+ "kind": "reel",
+ "beats": [
+  {
+   "text": "ఒక రాజ్యం ఇవ్వబోతున్నారు.",
+   "dur": 2.2
+  },
+  {
+   "text": "కానీ ఆయన ఒక మాట కోసం అడవికి వెళ్ళాడు.",
+   "dur": 2.8
+  },
+  {
+   "text": "పధ్నాలుగు సంవత్సరాలు.",
+   "dur": 2.0,
+   "style": "big",
+   "gold": true
+  },
+  {
+   "text": "మన పిల్లలకు ఈ కథ ఎవరు చెబుతారు?",
+   "dur": 2.6
+  },
+  {
+   "text": "మనమే.",
+   "dur": 1.6,
+   "style": "big"
+  }
+ ],
+ "title": "రామాయణం",
+ "end_line": "పిల్లల కోసం బొమ్మలతో — Pen A Story యాప్‌లో",
+ "cta": "యాప్ లింక్ బయోలో",
+ "caption": "ఒక రాజ్యం ఇవ్వబోతున్నారు. కానీ ఆయన ఒక మాట కోసం అడవికి వెళ్ళాడు. 🏹\n\nమన పిల్లలకు ఈ కథ ఎవరు చెబుతారు? మనమే. బొమ్మలతో, సులభమైన భాషలో రామాయణం — రాత్రి నిద్రకు ముందు కలిసి చదవండి.\n\nచిన్నప్పుడు మీకు రామాయణం ఎవరు చెప్పారు? 👇\n\n📲 Pen A Story యాప్ ఉచితం: లింక్ బయోలో ఉంది (Android + iPhone)\n\n#penastory #ramayanam #telugu #kidsbooks #teluguparents",
+ "music": 1,
+ "images": [
+  "https://penastory.com/wp-content/plugins/penastory-ramayana/assets/cover-front.jpg"
+ ]
+}

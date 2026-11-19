@@ -1,0 +1,39 @@
+{
+ "kind": "reel",
+ "beats": [
+  {
+   "text": "Solve this in 10 seconds.",
+   "dur": 2.0,
+   "style": "big"
+  },
+  {
+   "text": "The power went out at 11 PM. The whole street went dark.",
+   "dur": 3.0
+  },
+  {
+   "text": "At 2 AM, the safe was empty.",
+   "dur": 2.2
+  },
+  {
+   "text": "The guard says: \"I was reading by the window all night. I saw no one.\"",
+   "dur": 3.2
+  },
+  {
+   "text": "Who's lying?",
+   "dur": 1.8,
+   "style": "big",
+   "gold": true
+  },
+  {
+   "text": "Answer in the comments. Mysteries like this live in one book.",
+   "dur": 2.6,
+   "style": "small"
+  }
+ ],
+ "title": "Solve the Case",
+ "end_line": "A new mystery every Tuesday",
+ "cta": "Follow @pen_a_story",
+ "caption": "Solve this in 10 seconds 🕯️\n\nThe power went out at 11 PM. At 2 AM, the safe was empty. The guard says he was reading by the window all night and saw no one.\n\nWho's lying, and how do you know? Drop your answer 👇 (we'll pin the first correct one)\n\nNew case every Tuesday. Follow so you don't miss it.\n\n#penastory #mystery #solvethecase #thriller #bookstagramindia",
+ "music": 0,
+ "images": []
+}

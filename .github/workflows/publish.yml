@@ -1,0 +1,32 @@
+name: Build and publish to Instagram
+on:
+  push:
+    paths: ["specs/**", "scripts/**"]
+  workflow_dispatch:
+    inputs:
+      prefix: {description: "Publish this queue file prefix now (optional)", required: false}
+concurrency: {group: pas, cancel-in-progress: false}
+permissions: {contents: write}
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libraqm0
+          pip install -q pillow numpy fonttools
+      - name: Build new specs
+        run: python scripts/build.py
+      - name: Save built media
+        run: |
+          git config user.name "pas-bot"; git config user.email "bot@users.noreply.github.com"
+          git add -A media queue && git commit -qm "Build media" && git push -q || echo "nothing built"
+      - name: Publish due posts
+        if: github.event_name != 'push'
+        run: sleep 20 && python scripts/publish.py ${{ github.event.inputs.prefix }}
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ vars.IG_USER_ID }}
+      - name: Mark posted
+        if: github.event_name != 'push'
+        run: git add -A queue && git commit -qm "Mark posted" && git push -q || echo "nothing to commit"
