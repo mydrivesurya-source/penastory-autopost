@@ -1,0 +1,47 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1576514864427-f0809d2b66eb?w=1600&q=90",
+  "https://images.unsplash.com/photo-1626491058156-2daaeea7f578?w=1600&q=90",
+  "https://images.unsplash.com/photo-1564291886459-a39ad7415125?w=1600&q=90",
+  "https://images.unsplash.com/photo-1626149637281-4e227308da18?w=1600&q=90",
+  "https://images.unsplash.com/photo-1792143663827-c77f1c1f2d71?w=1600&q=90"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "2 AM. Rain. A man running down Koti road, waving at every auto.",
+   "dur": 3.4,
+   "small": "A story"
+  },
+  {
+   "image": 1,
+   "text": "Only Salim stopped. In the back seat, the man's wife. In labour.",
+   "dur": 3.4
+  },
+  {
+   "image": 2,
+   "text": "Salim drove through the empty city like it was his own family. He never switched the meter on.",
+   "dur": 3.8
+  },
+  {
+   "image": 3,
+   "text": "Twenty-four years later, a young doctor waved down his auto outside the hospital.",
+   "dur": 3.6
+  },
+  {
+   "image": 4,
+   "text": "\"You won't remember me, uncle. You drove me here before I was born.\"",
+   "dur": 3.8,
+   "small": "Some fares get paid back late."
+  }
+ ],
+ "end": {
+  "image": 1,
+  "text": "Who's the stranger your family still talks about?",
+  "small": "Tell us below 👇"
+ },
+ "caption": "2 AM. Rain. One auto driver who never switched the meter on. 🛺\n\nWho's the stranger your family still talks about? Tell us 👇\n\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #shortstory #storytelling #hyderabad #readersofinstagram",
+ "music": 1
+}

@@ -1,0 +1,53 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "PEN A STORY · ఒక్క కథ",
+ "images": [
+  "https://images.unsplash.com/photo-1560885673-4e2f056f6e2a?w=1600&q=90",
+  "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=1600&q=90",
+  "https://images.unsplash.com/photo-1748323123788-87a32949f4b0?w=1600&q=90",
+  "https://images.unsplash.com/photo-1496813146940-1601b02f81a4?w=1600&q=90",
+  "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=1600&q=90",
+  "assets/covers/ramayana.jpg"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "అమ్మమ్మకి 82. కళ్ళు సరిగ్గా కనిపించవు. అయినా ప్రతి సాయంత్రం Ramayana పుస్తకం ఒళ్ళో పెట్టుకుంటుంది.",
+   "small": "ఒక్క కథ · ఆమె చదవని పుస్తకం"
+  },
+  {
+   "image": 1,
+   "text": "అందుకే రోజూ 6 గంటలకి నేను చదువుతాను. ఆమె కళ్ళు మూసుకుని వింటుంది."
+  },
+  {
+   "image": 2,
+   "text": "ఒక రోజు cricket match ఉందని ఒక page skip చేశాను. ఎవరికీ తెలియదు అనుకున్నా."
+  },
+  {
+   "image": 3,
+   "text": "అమ్మమ్మ నవ్వింది: \"Hanuman ఇంకా సముద్రం దాటలేదు రా. ఒక page వెనక్కి వెళ్ళు.\""
+  },
+  {
+   "image": 4,
+   "text": "అప్పుడు తెలిసింది — ఆ పుస్తకం మొత్తం ఆమెకి కంఠతా వచ్చు. 60 years నుంచి."
+  },
+  {
+   "image": 0,
+   "text": "\"మరి నన్ను ఎందుకు చదవమన్నావు?\" \"నువ్వు రోజూ ఒక గంట నా పక్కన కూర్చోవాలని.\""
+  },
+  {
+   "kind": "end",
+   "image": 1,
+   "text": "మీ అమ్మమ్మ, తాతయ్యలతో మీ daily ritual ఏది?",
+   "small": "Comment చేయండి 📖"
+  },
+  {
+   "kind": "book",
+   "image": 5,
+   "text": "Ramayana",
+   "small": "Vamsi Krishna Dasari · అమ్మమ్మ కథలు, పిల్లల కోసం బొమ్మలతో"
+  }
+ ],
+ "caption": "అమ్మమ్మకి కళ్ళు కనిపించవు. అయినా రోజూ ఒక పుస్తకం ఒళ్ళో పెట్టుకుంటుంది. ఎందుకు? 📖\n\nఒక్క post లో పూర్తి కథ — చివరి వరకు swipe చేయండి.\n\nమీ అమ్మమ్మ, తాతయ్యలతో మీ daily ritual ఏది? Comment చేయండి.\n\nఈ కథ ఎవరికైనా గుర్తు చేస్తే, వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #shortstory #ammamma #tenglish"
+}

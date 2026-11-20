@@ -36,3 +36,19 @@ Plans live in `scripts/plan_*.py` (they write specs). Nothing from hold/ is ever
 ## Pen A Story books (real covers in assets/covers)
 The Unseen Curriculum (Vibhuti Vaid) · Camera on His Shoulder (Jasveer Singh Dangi) · Four Hearts, One Story (Vishal Varshney) · Ramayana (Vamsi Krishna Dasari) · The Secret to Love That Lasts (Sukanya Biswas) · 2Min Stories (Surya Teja) · The Rise of Sun's Grove (Surya Teja) · ఈ 21వ శతాబ్దపు కొత్త రాజకీయ నీతి (Kanagiri SN Prasad).
 A story ends on a book only where the theme genuinely matches. Never claim a book is free.
+
+## Serials
+- **#1 Platform No. 3** (Telugu, 10 eps, 20-29 Nov). Finale 29 Nov.
+- **#2 The Second Key** (English, 8 eps, 30 Nov - 7 Dec, 13:00). Ananya (29, Bangalore) comes to sell her late ammamma's house in Hyderabad's Old City.
+  Ep1 (30 Nov): brass key between pages 88-89 of ammamma's last book, note "Not for the doors you can see"; 11 doors, the key fits none.
+  Planned arc: Ep2 neighbour Jaffer uncle (photo tin2, already teased): "Your ammamma's house had twelve doors" — one was plastered over in 1984.
+  Ep3 behind the wall upstairs: a tiny room, a desk, a typewriter, letters to publishers signed "Sitara", all rejections. Ep4 a locked trunk the key opens:
+  a finished novel, 1984, never published; note "Read the last chapter first." Ep5 the last chapter is about a daughter who left home (Ananya's mother).
+  Ep6 Ananya calls her mother; the mother knew nothing about the novel. Ep7 Ananya cancels the sale. Ep8 finale: the book gets its first reader —
+  her mother, reading it aloud in the twelfth room. (Keep it fiction; never present it as a real Pen A Story publication.)
+- Next serial (#3, from 8 Dec) is Telugu; pick genre from the stats.
+
+## Learnings (virality decision log)
+- **20 Nov** — Day 1 of the system. 6 posts live (library-card standalone, AM story, Platform No. 3 ep1, reader memes 1, reel last-customer, auto-library standalone).
+  No stats yet: the first nightly `stats.py` run happens after 21:40 IST today, so status/stats.json did not exist at review time.
+  Decision: no changes; 30 Nov written on the standing mix (serial #2 English, Telugu nostalgia/standalone, English reel). First real review on 21 Nov.

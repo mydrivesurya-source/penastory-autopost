@@ -1,0 +1,42 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "THE SECOND KEY · SERIAL",
+ "images": [
+  "https://images.unsplash.com/photo-1583008520412-7ee838891ada?w=1600&q=90",
+  "https://images.unsplash.com/photo-1706038416284-6c51d61e2f54?w=1600&q=90",
+  "https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=1600&q=90",
+  "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=1600&q=90",
+  "https://images.unsplash.com/photo-1653495482648-0cfd8847bb11?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "Old City, Hyderabad. Ammamma's house had been locked for three years. Ananya came to sell it.",
+   "small": "Episode 1"
+  },
+  {
+   "image": 1,
+   "text": "The broker wanted the keys by Friday. \"Old houses sell fast, madam. Old memories don't.\""
+  },
+  {
+   "image": 2,
+   "text": "In ammamma's last book, between pages 88 and 89, she found a small brass key."
+  },
+  {
+   "image": 3,
+   "text": "Folded around it, a note in ammamma's handwriting: \"Not for the doors you can see.\""
+  },
+  {
+   "image": 4,
+   "text": "Ananya counted. Eleven doors. She tried every single lock. The key fit none."
+  },
+  {
+   "kind": "end",
+   "image": 0,
+   "text": "So where is the door this key opens?",
+   "small": "Episode 2 · tomorrow 1 PM"
+  }
+ ],
+ "caption": "Ammamma's house had eleven doors. Her key fit none of them. 🗝️\n\nThe Second Key · Episode 1. Our new English serial, a new episode every day at 1 PM. Swipe to the cliffhanger.\n\nWhere do you think the twelfth door is? Guess below 👇\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #thesecondkey #serialstory #shortstory #hyderabad"
+}
