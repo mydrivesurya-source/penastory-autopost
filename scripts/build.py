@@ -32,6 +32,7 @@ def check_caption(c):
 def build(spec_path):
     stem = spec_path.stem
     if (Q / f"{stem}.json").exists() or (Q / "done" / f"{stem}.json").exists(): return False
+    if any((R / "hold").rglob(f"{stem}.json")): return False          # held / paused posts are never rebuilt
     s = json.loads(spec_path.read_text()); k = s["kind"]; cap = s.get("caption", "")
     if k != "story": check_caption(cap)
     imgs = [fetch(u) for u in s.get("images", [])]
