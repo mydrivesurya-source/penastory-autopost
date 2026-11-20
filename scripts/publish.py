@@ -58,31 +58,77 @@ def container(post):
         raise SystemExit(f"unknown type {t}")
     wait_ready(cid); return cid
 
+import subprocess
+def git(*a, check=True):
+    return subprocess.run(["git", *a], cwd=ROOT, capture_output=True, text=True, check=check)
+
+def sync():
+    """Bring the checkout to the newest main before deciding anything (never act on a stale snapshot)."""
+    git("fetch", "-q", "origin", "main"); git("reset", "-q", "--hard", "origin/main")
+
+def ledger():
+    f = ROOT / "status" / "posted.jsonl"
+    return {json.loads(l)["file"] for l in f.read_text().splitlines() if l.strip() and '"id"' in l} if f.exists() else set()
+
+def save(msg, tries=6):
+    """Commit + push right away; rebase and retry if someone else pushed first."""
+    git("add", "-A", "queue", "status"); 
+    if git("diff", "--cached", "--quiet", check=False).returncode == 0: return True
+    git("-c", "user.name=pas-bot", "-c", "user.email=bot@users.noreply.github.com", "commit", "-qm", msg)
+    for i in range(tries):
+        if git("push", "-q", "origin", "HEAD:main", check=False).returncode == 0: return True
+        git("pull", "-q", "--rebase", "origin", "main", check=False); time.sleep(3 + 3 * i)
+    raise SystemExit("could not save posted state - stopping to avoid duplicates")
+
+def recent_captions():
+    try:
+        d = call(f"{IG}/media", {"fields": "caption,timestamp", "limit": 25}, "GET").get("data", [])
+    except SystemExit: return set()
+    cut = datetime.datetime.utcnow() - datetime.timedelta(hours=24)
+    return {(m.get("caption") or "").strip()[:120] for m in d
+            if m.get("caption") and datetime.datetime.strptime(m["timestamp"][:19], "%Y-%m-%dT%H:%M:%S") > cut}
+
 def log(rec):
     p = ROOT / "status"; p.mkdir(exist_ok=True)
     with open(p / "posted.jsonl", "a") as f: f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
 def main():
-    now = (datetime.datetime.utcnow() + datetime.timedelta(hours=5, minutes=30)).strftime("%Y-%m-%d-%H%M")
     args = [a for a in sys.argv[1:] if a]
     check = "--check" in args; args = [a for a in args if a != "--check"]
     only = args[0] if args else None
+    if not check: sync()
+    now = (datetime.datetime.utcnow() + datetime.timedelta(hours=5, minutes=30)).strftime("%Y-%m-%d-%H%M")
     q = ROOT / "queue"; done = q / "done"; done.mkdir(exist_ok=True)
     files = sorted(f for f in q.glob("*.json") if (f.name.startswith(only) if only else f.name[:15] <= now))[:3]
     if not files: print("nothing due at", now); return
+    posted = ledger(); caps = None
     for f in files:
+        if not check:
+            sync()                                             # re-check the newest state before EVERY post
+            if not f.exists() or f.name in ledger(): print("already posted, skip", f.name); continue
         post = json.loads(f.read_text())
+        if f.name in posted:                                   # posted earlier but not moved: just move it
+            shutil.move(str(f), done / f.name); save(f"Mark posted {f.name}"); continue
+        cap = (post.get("caption") or "").strip()[:120]
+        if cap and not check:
+            caps = recent_captions() if caps is None else caps
+            if cap in caps:                                    # Instagram already has this exact post
+                print("duplicate caption on Instagram, skip", f.name); log({"file": f.name, "id": "dup-skip", "at": now})
+                shutil.move(str(f), done / f.name); save(f"Skip duplicate {f.name}"); continue
         try:
             cid = container(post)
             if check:
-                print("CHECK OK (not published):", f.name, "container", cid); log({"file": f.name, "check": "ok", "at": now}); continue
+                print("CHECK OK (not published):", f.name, "container", cid); continue
             mid = call(f"{IG}/media_publish", {"creation_id": cid})["id"]
         except SystemExit as e:
-            print("FAILED", f.name, e); log({"file": f.name, "error": str(e)[:400], "at": now}); continue
-        link = call(mid, {"fields": "permalink"}, "GET").get("permalink", "")
+            print("FAILED", f.name, e); log({"file": f.name, "error": str(e)[:400], "at": now}); save(f"Failed {f.name}"); continue
+        shutil.move(str(f), done / f.name)                    # mark first, then fetch the link
+        log({"file": f.name, "id": mid, "type": post["type"], "at": now}); save(f"Posted {f.name}")
+        try: link = call(mid, {"fields": "permalink"}, "GET").get("permalink", "")
+        except SystemExit: link = ""
         print("published", f.name, "->", mid, link)
-        log({"file": f.name, "id": mid, "permalink": link, "type": post["type"], "at": now})
-        shutil.move(str(f), done / f.name)
+        if link: log({"file": f.name, "id": mid, "permalink": link, "type": post["type"], "at": now}); save(f"Link {f.name}")
+        caps = None
 
 if __name__ == "__main__":
     main()

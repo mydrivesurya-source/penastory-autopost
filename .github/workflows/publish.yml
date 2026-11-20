@@ -11,13 +11,15 @@ on:
   workflow_dispatch:
     inputs:
       prefix: {description: "Publish this queue file prefix now (optional)", required: false}
-concurrency: {group: pas, cancel-in-progress: false}
+concurrency: {group: pas, cancel-in-progress: false}   # one run at a time
 permissions: {contents: write}
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with: {ref: main, fetch-depth: 20}   # newest main at job start, never the stale trigger snapshot
+      - run: git config user.name "pas-bot" && git config user.email "bot@users.noreply.github.com"
       - run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libraqm0
           pip install -q pillow numpy fonttools
@@ -25,8 +27,10 @@ jobs:
         run: python scripts/build.py
       - name: Save built media
         run: |
-          git config user.name "pas-bot"; git config user.email "bot@users.noreply.github.com"
-          git add -A media queue && git commit -qm "Build media" && git push -q || echo "nothing built"
+          git add -A media queue
+          git diff --cached --quiet && exit 0
+          git commit -qm "Build media"
+          for i in 1 2 3 4 5; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main; sleep 5; done; exit 1
       - name: Publish due posts
         if: github.event_name != 'push'
         run: sleep 20 && python scripts/publish.py ${{ github.event.inputs.prefix }}
@@ -50,6 +54,16 @@ jobs:
         env:
           IG_TOKEN: ${{ secrets.IG_TOKEN }}
           IG_USER_ID: ${{ vars.IG_USER_ID }}
-      - name: Mark posted
+      - name: Stats now (control/stats-now.txt)
+        if: github.event_name == 'push' && hashFiles('control/stats-now.txt') != ''
+        run: python scripts/stats.py; git rm -q control/stats-now.txt
+        env:
+          IG_TOKEN: ${{ secrets.IG_TOKEN }}
+          IG_USER_ID: ${{ vars.IG_USER_ID }}
+      - name: Save stats / leftovers
         if: always()
-        run: git add -A . && git commit -qm "Mark posted" && git push -q || echo "nothing to commit"
+        run: |
+          git add -A status control
+          git diff --cached --quiet && exit 0
+          git commit -qm "Status"
+          for i in 1 2 3 4 5; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main; sleep 5; done
