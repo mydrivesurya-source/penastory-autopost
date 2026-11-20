@@ -356,7 +356,7 @@ def photo_slide(s, imgs, idx, total, label=""):
         return book_card(imgs[s["image"]], s.get("text", ""), s.get("small", ""), W, H, label)
     im = grade(imgs[s.get("image", 0)], W, H, dark=0.35 if end else 0.0).convert("RGBA")
     g = np.zeros((H, W, 4), np.uint8); t = np.clip((np.arange(H) - H * 0.38) / (H * 0.62), 0, 1) ** 1.4
-    g[..., 3] = (t * (235 if not end else 200))[:, None]; im = Image.alpha_composite(im, Image.fromarray(g))
+    g[..., 3] = (np.minimum(t * 1.15, 1) * (235 if not end else 200))[:, None]; im = Image.alpha_composite(im, Image.fromarray(g))
     d = ImageDraw.Draw(im); M = 92; Wt = W - 2 * M
     if label:
         f = font("bold", 26, label); d.text((M, 84), clean(label, f), font=f, fill=(255, 244, 220, 230))
@@ -365,13 +365,13 @@ def photo_slide(s, imgs, idx, total, label=""):
     f1, L1, s1 = fit(d, text, kind, Wt, 520, 76 if (idx == 0 or end) else 58, 34, 1.36)
     f2, L2, s2 = fit(d, small, "ital", Wt, 160, 36, 26, 1.35) if small else (None, [], 0)
     hgt = len(L1) * s1 * 1.36 + (len(L2) * s2 * 1.35 + 34 if L2 else 0)
-    y = (H - hgt) / 2 if end else H - 150 - hgt
+    y = (H - hgt) / 2 - 60 if end else min(H - 400 - hgt, H * 0.70 - hgt)   # bottom ~30% stays clear of IG's username/caption/dots overlay
     y = block(d, M, y, L1, f1, s1, (255, 250, 240), "center" if end else "left", Wt, 1.36)
     if L2:
         block(d, M, y + 30, L2, f2, s2, (232, 208, 150), "center" if end else "left", Wt, 1.35)
     if total > 1 and not end:
-        f = font("body", 24); tt = f"{idx + 1} / {total}"; d.text((W - M - d.textlength(tt, font=f), 88), tt, font=f, fill=(255, 244, 220, 200))
-    logo(im, 70, "br", 56)
+        f = font("body", 24); tt = f"{idx + 1} / {total}"  # top-right, clear of IG overlay; d.text((W - M - 96 - d.textlength(tt, font=f), 88), tt, font=f, fill=(255, 244, 220, 200))
+    logo(im, 76, "tr", 62)
     return im.convert("RGB")
 
 def photo_story(spec, imgs):
@@ -471,13 +471,13 @@ def book_card(cover, title, small, W, H, label="", showlogo=True):
     d = ImageDraw.Draw(bg); M = 90
     if label:
         f = font("bold", 26, label); d.text((M, 84), clean(label, f), font=f, fill=(255, 244, 220, 230))
-    c = cover_card(cover, int(W * 0.56), int(H * 0.50)); bg.paste(c, ((W - c.width) // 2, int(H * 0.10)), c)
-    y = int(H * 0.10) + c.height - 10
+    c = cover_card(cover, int(W * 0.46), int(H * 0.40)); bg.paste(c, ((W - c.width) // 2, int(H * 0.07)), c)
+    y = int(H * 0.07) + c.height - 20
     f1, L1, s1 = fit(d, title, "head", W - 2 * M, 200, 58, 34, 1.3); y = block(d, M, y, L1, f1, s1, (255, 250, 240), "center", W - 2 * M, 1.3)
     if small:
         f2, L2, s2 = fit(d, small, "ital", W - 2 * M, 120, 36, 26, 1.3); y = block(d, M, y + 12, L2, f2, s2, (236, 206, 140), "center", W - 2 * M, 1.3)
     t = "Read it on the Pen A Story app"; f = font("bold", 34, t); tw = d.textlength(t, font=f)
-    by = min(H - 200, y + 34); d.rounded_rectangle(((W - tw) / 2 - 40, by, (W + tw) / 2 + 40, by + 80), 40, fill=(232, 196, 110))
+    by = min(int(H * 0.74) - 80, y + 30); d.rounded_rectangle(((W - tw) / 2 - 40, by, (W + tw) / 2 + 40, by + 80), 40, fill=(232, 196, 110))
     d.text(((W - tw) / 2, by + 18), t, font=f, fill=(20, 20, 24))
-    if showlogo: logo(bg, 70, "br", 56)
+    if showlogo: logo(bg, 76, "tr", 62)
     return bg.convert("RGB")
