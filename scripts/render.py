@@ -359,7 +359,7 @@ def photo_slide(s, imgs, idx, total, label=""):
     g[..., 3] = (t * (235 if not end else 200))[:, None]; im = Image.alpha_composite(im, Image.fromarray(g))
     d = ImageDraw.Draw(im); M = 92; Wt = W - 2 * M
     if label:
-        f = font("bold", 26, label); d.text((M, 84), label, font=f, fill=(255, 244, 220, 230))
+        f = font("bold", 26, label); d.text((M, 84), clean(label, f), font=f, fill=(255, 244, 220, 230))
     text = s.get("text", ""); small = s.get("small", "")
     kind = "head" if s.get("big") or idx == 0 or end else "body_serif"
     f1, L1, s1 = fit(d, text, kind, Wt, 520, 76 if (idx == 0 or end) else 58, 34, 1.36)
@@ -381,7 +381,7 @@ def photo_story(spec, imgs):
     g = np.zeros((H, W, 4), np.uint8); t = np.clip((np.arange(H) - H * 0.30) / (H * 0.7), 0, 1) ** 1.2
     g[..., 3] = (t * 225)[:, None]; im = Image.alpha_composite(im, Image.fromarray(g)); d = ImageDraw.Draw(im); M = 96
     if spec.get("kicker"):
-        f = font("bold", 32, spec["kicker"]); d.text((M, 150), spec["kicker"], font=f, fill=(255, 238, 200))
+        f = font("bold", 32, spec["kicker"]); d.text((M, 150), clean(spec["kicker"], f), font=f, fill=(255, 238, 200))
     f1, L1, s1 = fit(d, spec.get("title", ""), "head", W - 2 * M, 700, 86, 40, 1.3)
     f2, L2, s2 = fit(d, spec.get("text", ""), "ital", W - 2 * M, 300, 44, 30, 1.35) if spec.get("text") else (None, [], 0)
     hgt = len(L1) * s1 * 1.3 + (len(L2) * s2 * 1.35 + 40 if L2 else 0)
@@ -470,7 +470,7 @@ def book_card(cover, title, small, W, H, label="", showlogo=True):
     bg = grade(cover, W, H, dark=0.55).filter(ImageFilter.GaussianBlur(26)).convert("RGBA")
     d = ImageDraw.Draw(bg); M = 90
     if label:
-        f = font("bold", 26, label); d.text((M, 84), label, font=f, fill=(255, 244, 220, 230))
+        f = font("bold", 26, label); d.text((M, 84), clean(label, f), font=f, fill=(255, 244, 220, 230))
     c = cover_card(cover, int(W * 0.56), int(H * 0.50)); bg.paste(c, ((W - c.width) // 2, int(H * 0.10)), c)
     y = int(H * 0.10) + c.height - 10
     f1, L1, s1 = fit(d, title, "head", W - 2 * M, 200, 58, 34, 1.3); y = block(d, M, y, L1, f1, s1, (255, 250, 240), "center", W - 2 * M, 1.3)
