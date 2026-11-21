@@ -52,3 +52,7 @@ A story ends on a book only where the theme genuinely matches. Never claim a boo
 - **20 Nov** — Day 1 of the system. 6 posts live (library-card standalone, AM story, Platform No. 3 ep1, reader memes 1, reel last-customer, auto-library standalone).
   No stats yet: the first nightly `stats.py` run happens after 21:40 IST today, so status/stats.json did not exist at review time.
   Decision: no changes; 30 Nov written on the standing mix (serial #2 English, Telugu nostalgia/standalone, English reel). First real review on 21 Nov.
+- **21 Nov** — Review on the latest stats (20 Nov 21:47 IST; the 21 Nov nightly run had not happened yet). 5 system posts measured, all <1 day old.
+  Won: the reel (last-customer) reached 35 vs 7-16 for the carousels (reels get 2-5x distribution). Weak: its avg watch was 2.2 s, so viewers leave in beat 1.
+  Account history: big hits were Telugu + emotional/tribute (teacher tribute 26 shares; Telugu cyclist 4.5k interactions).
+  Change (from 1 Dec): reel beat 1 is a 2.8 s, under-8-word hook; no format cut or boosted yet (<5 posts per format). 1 Dec written; quiz #2 answer pre-written for 2 Dec 10:30.

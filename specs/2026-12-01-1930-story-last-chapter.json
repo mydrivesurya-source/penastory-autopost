@@ -1,0 +1,46 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "PEN A STORY · ఒక్క కథ",
+ "images": [
+  "https://images.unsplash.com/photo-1726747062988-cd0b86c814e0?w=1600&q=90",
+  "https://images.unsplash.com/photo-1779635279571-988a2e63b549?w=1600&q=90",
+  "https://images.unsplash.com/photo-1764705448662-f74992067ff7?w=1600&q=90",
+  "https://images.unsplash.com/photo-1771308134963-9ffb3abb2471?w=1600&q=90",
+  "https://images.unsplash.com/photo-1474366521946-c3d4b507abf2?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "Godavari Express. రాత్రి 11. S4 coach లో అందరూ నిద్రపోతున్నారు — నేను, ఎదురు seat లో ఒక తాతగారు తప్ప.",
+   "small": "ఒక్క కథ · చివరి chapter"
+  },
+  {
+   "image": 1,
+   "text": "నా చేతిలో ఒక పాత Telugu novel. ఆయన చాలాసేపు దాన్నే చూస్తున్నారు."
+  },
+  {
+   "image": 0,
+   "text": "Rajahmundry దగ్గర chai తాగుతూ అడిగారు: \"అమ్మా, కళ్ళద్దాలు మర్చిపోయాను. చివరి chapter గట్టిగా చదువుతావా?\""
+  },
+  {
+   "image": 2,
+   "text": "చదివాను. చివరి page కి వచ్చేసరికి ఆయన కళ్ళలో నీళ్ళు. Samalkot లో దిగిపోయారు, ఒక్క మాట కూడా లేకుండా."
+  },
+  {
+   "image": 3,
+   "text": "ఆయన seat మీద ఒక చిన్న కాగితం: \"ఎవరైనా నా కథ చదువుతుంటే వినడం — 40 ఏళ్ళలో ఇదే మొదటిసారి.\""
+  },
+  {
+   "image": 4,
+   "text": "ఇంటికి వచ్చి back cover తిప్పాను. Author photo. అదే ముఖం — 40 ఏళ్ళు చిన్నది."
+  },
+  {
+   "kind": "end",
+   "image": 1,
+   "text": "మీ favourite రచయిత ఎదురుగా కూర్చుంటే, ఏం చెప్తారు?",
+   "small": "Comment చేయండి 📖"
+  }
+ ],
+ "caption": "రాత్రి train. ఒక తాతగారు. \"చివరి chapter గట్టిగా చదువుతావా?\" 🚆\n\nఒక్క post లో పూర్తి కథ — చివరి slide వరకు swipe చేయండి.\n\nమీ favourite రచయిత ఎదురుగా కూర్చుంటే, ఏం చెప్తారు? Comment చేయండి.\n\nTrain లో కథలు ఇష్టపడే friend కి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #shortstory #tenglish #trainstories"
+}

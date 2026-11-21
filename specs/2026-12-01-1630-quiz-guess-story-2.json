@@ -1,0 +1,37 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "STORY QUIZ · కథ కనుక్కోండి",
+ "images": [
+  "https://images.unsplash.com/photo-1694614360428-608d018bb054?w=1600&q=90",
+  "https://images.unsplash.com/photo-1754903272366-f92a6b23f18e?w=1600&q=90",
+  "https://images.unsplash.com/photo-1619260584294-8a4e63f5ade5?w=1600&q=90",
+  "https://images.unsplash.com/photo-1685293080597-5d3526faf88e?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "3 clues. ఒక్క కథ. Guess చేయగలరా?",
+   "small": "Story Quiz #2"
+  },
+  {
+   "image": 1,
+   "text": "Clue 1: ఒక అడవి. ఒక గర్వం ఉన్న రాజు. రోజుకో జంతువు అతని దగ్గరికి వెళ్ళాలి."
+  },
+  {
+   "image": 2,
+   "text": "Clue 2: ఒక రోజు ఒక చిన్న జంతువు కావాలనే ఆలస్యంగా వెళ్ళింది."
+  },
+  {
+   "image": 3,
+   "text": "Clue 3: \"ప్రభూ, ఆ బావిలో మీకంటే పెద్ద రాజు ఉన్నాడు.\""
+  },
+  {
+   "kind": "end",
+   "image": 0,
+   "text": "ఏ కథ? Comment చేయండి",
+   "small": "Answer రేపు story లో"
+  }
+ ],
+ "caption": "3 clues. ఒక్క కథ. 🔍\n\nగర్వం ఉన్న రాజు. ఆలస్యంగా వచ్చిన చిన్న జంతువు. ఒక బావి.\n\nఏ కథో comment చేయండి — answer రేపు 10:30 story లో. Panchatantra fans కి easy 😉\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #storyquiz #panchatantra #telugukathalu #childhoodmemories"
+}

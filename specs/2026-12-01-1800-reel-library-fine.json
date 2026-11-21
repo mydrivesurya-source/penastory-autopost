@@ -1,0 +1,52 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1600&q=90",
+  "https://images.unsplash.com/photo-1750513538756-46e040ad48b7?w=1600&q=90",
+  "https://images.unsplash.com/photo-1706102005390-2d1f41fdddcd?w=1600&q=90",
+  "https://images.unsplash.com/photo-1763908161557-dffe1780dda5?w=1600&q=90",
+  "assets/covers/unseen-curriculum.jpg"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "31 years late.\nFine: Rs 4,380.",
+   "dur": 2.8,
+   "small": "A story"
+  },
+  {
+   "image": 1,
+   "text": "1995. The night before his train to Delhi, he borrowed one book. He never returned it.",
+   "dur": 3.8
+  },
+  {
+   "image": 2,
+   "text": "That book got him through hostel, two failed exams and his first job.",
+   "dur": 3.4
+  },
+  {
+   "image": 0,
+   "text": "Today he came back to pay. The librarian, now 74, didn't take his money.",
+   "dur": 3.6
+  },
+  {
+   "image": 3,
+   "text": "She stamped the book RETURNED, and slid a new card across. \"Next one's due in two weeks.\"",
+   "dur": 3.8,
+   "small": "Some teachers don't stand in classrooms."
+  }
+ ],
+ "end": {
+  "image": 3,
+  "text": "Which book would you never give back?",
+  "small": "Tell us below 👇"
+ },
+ "caption": "31 years late. Rs 4,380 in fines. And a librarian who wouldn't take a rupee. 📚\n\nWhich book would you never give back? Tell us 👇\n\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #shortstory #booklovers #librarylove #readersofinstagram",
+ "music": 2,
+ "book": {
+  "image": 4,
+  "text": "The Unseen Curriculum",
+  "small": "Vibhuti Vaid · what great teachers teach without a syllabus"
+ }
+}
