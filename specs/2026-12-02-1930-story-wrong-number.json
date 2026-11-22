@@ -1,0 +1,46 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "PEN A STORY · ఒక్క కథ",
+ "images": [
+  "https://images.unsplash.com/photo-1533128361669-69c065857a13?w=1600&q=90",
+  "https://images.unsplash.com/photo-1596450513856-250e5f5c46cc?w=1600&q=90",
+  "https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?w=1600&q=90",
+  "https://images.unsplash.com/photo-1567960699877-b134ad1caef8?w=1600&q=90",
+  "https://images.unsplash.com/photo-1605292356183-a77d0a9c9d1d?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "ప్రతి ఆదివారం రాత్రి 7 గంటలకి అమ్మమ్మ phone మోగేది. \"అమ్మా, తిన్నావా?\"",
+   "small": "ఒక్క కథ · Wrong Number"
+  },
+  {
+   "image": 1,
+   "text": "Bangalore నుంచి ఒక అబ్బాయి. Wrong number. మొదటి call లోనే అమ్మమ్మకి అర్థమైంది. కానీ ఎప్పుడూ correct చేయలేదు."
+  },
+  {
+   "image": 2,
+   "text": "నేను అడిగాను: \"తెలియని వాడితో గంటసేపు ఏం మాట్లాడతావు అమ్మమ్మా?\""
+  },
+  {
+   "image": 3,
+   "text": "\"వాడి గొంతులో ఆకలి ఉంది రా. అన్నం ఆకలి కాదు. మాట్లాడే మనిషి ఆకలి.\""
+  },
+  {
+   "image": 4,
+   "text": "ఒక సంవత్సరం తర్వాత అమ్మమ్మ వెళ్ళిపోయింది. ఆ ఆదివారం 7 గంటలకి phone మోగింది. నేను ఎత్తాను."
+  },
+  {
+   "image": 0,
+   "text": "విషయం చెప్పాను. చాలాసేపు silence. తర్వాత: \"Wrong number అని నాకు మొదటి రోజే తెలుసు. మా అమ్మ పోయిన రెండో వారం అది.\""
+  },
+  {
+   "kind": "end",
+   "image": 3,
+   "text": "మీ జీవితంలో అలాంటి \"wrong number\" ఎవరైనా ఉన్నారా?",
+   "small": "Comment చేయండి 📞"
+  }
+ ],
+ "caption": "ప్రతి ఆదివారం 7 గంటలకి ఒక wrong number. అమ్మమ్మ ఎప్పుడూ correct చేయలేదు. 📞\n\nఒక్క post లో పూర్తి కథ — చివరి slide వరకు swipe చేయండి.\n\nమీ జీవితంలో అలాంటి \"wrong number\" ఎవరైనా ఉన్నారా? Comment చేయండి.\nమీ అమ్మమ్మని గుర్తు చేసే వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #shortstory #ammamma #tenglish"
+}

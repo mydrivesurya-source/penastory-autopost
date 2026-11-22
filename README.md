@@ -56,3 +56,9 @@ A story ends on a book only where the theme genuinely matches. Never claim a boo
   Won: the reel (last-customer) reached 35 vs 7-16 for the carousels (reels get 2-5x distribution). Weak: its avg watch was 2.2 s, so viewers leave in beat 1.
   Account history: big hits were Telugu + emotional/tribute (teacher tribute 26 shares; Telugu cyclist 4.5k interactions).
   Change (from 1 Dec): reel beat 1 is a 2.8 s, under-8-word hook; no format cut or boosted yet (<5 posts per format). 1 Dec written; quiz #2 answer pre-written for 2 Dec 10:30.
+- **22 Nov** — Review on the latest stats (21 Nov 21:49 IST; the 22 Nov nightly run had not happened yet). 9 system posts measured.
+  Won: serial ep1 (3.0, reach 28), reel last-customer (3.0, reach 85), library-card standalone (2.5). Weak: tiffin-note standalone (1.1, reach 6),
+  thirsty-crow nostalgia (1.3), reel window-seat (1.6 — but avg watch rose to 3.5 s from 2.3 s, so the short hook helps).
+  Every post so far: 0 shares, 0 saves, 0 comments. Reels reach 3-5x carousels. Telugu carousels median 2.15 vs English posts 1.8. No format has 5+ posts yet.
+  Change (from 2 Dec): every caption gets one concrete "send this to <specific person>" line (shares are the gap); reels keep the <=8-word 2.8 s hook
+  and add a twist in the final beat. Mix and 50/50 language split unchanged. Next check: if reels keep 3x reach through 29 Nov, add a 2nd daily reel from 30 Nov+.

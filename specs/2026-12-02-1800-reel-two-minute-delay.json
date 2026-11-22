@@ -1,0 +1,54 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1763688653741-bcc54bea7c26?w=1600&q=90",
+  "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?w=1600&q=90",
+  "https://images.unsplash.com/photo-1743947830042-52acbb973f2d?w=1600&q=90",
+  "https://images.unsplash.com/photo-1511634829096-045a111727eb?w=1600&q=90",
+  "https://images.unsplash.com/photo-1783534784717-0843229c4f89?w=1600&q=90",
+  "https://images.unsplash.com/photo-1649339035455-1b0ab8a37d49?w=1600&q=90",
+  "assets/covers/2min-stories.jpg"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "The night the train refused to leave.",
+   "dur": 2.8,
+   "small": "A story"
+  },
+  {
+   "image": 1,
+   "text": "Ramaiah. Station master at a small junction for 38 years. He knew every regular by their chai order.",
+   "dur": 3.8
+  },
+  {
+   "image": 2,
+   "text": "His last shift. The 11:40 passenger pulled in. Two-minute halt, as always.",
+   "dur": 3.4
+  },
+  {
+   "image": 3,
+   "text": "But it didn't move. In every window, a face. In every hand, a paper cup of chai, raised to him.",
+   "dur": 3.8
+  },
+  {
+   "image": 4,
+   "text": "Next day the guard's log read: \"Delay: 2 min. Reason: thank you.\"",
+   "dur": 3.8,
+   "small": "Ramaiah framed that page."
+  }
+ ],
+ "end": {
+  "image": 5,
+  "text": "Which stranger from your daily route would you miss?",
+  "small": "Tell us below 👇"
+ },
+ "caption": "38 years. One small station. And a train that wouldn't leave without saying thank you. 🚆\n\nWhich stranger from your daily route would you miss the most? Tell us 👇\nSend this to someone who takes the same train every day.\n\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #shortstory #indianrailways #trainstories #readersofinstagram",
+ "music": 3,
+ "book": {
+  "image": 6,
+  "text": "2Min Stories",
+  "small": "Surya Teja · small stories about ordinary people"
+ }
+}
