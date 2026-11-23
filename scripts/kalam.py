@@ -124,7 +124,7 @@ def build(spec):
     vd = [dur(s["voice"]) for s in sc]
     # timeline: scene 0's voice starts over the intro; each later scene lasts its voice + 0.5 s
     intro = intro[:int(min(intro_d, 2.8) * FPS)]; intro_d = len(intro) / FPS        # keep the nib intro short
-    starts = [intro_d - XF]; seg = [max(vd[0] - (intro_d - 0.3) + 0.5, 2.0)]
+    starts = [intro_d - XF]; seg = [max(vd[0] - (intro_d - 0.3) + 0.5, 3.4)]
     voice_at = [0.3]
     for i in range(1, len(sc)):
         starts.append(starts[-1] + seg[-1]); voice_at.append(starts[-1] + spec.get('lead', 0.25)); seg.append(vd[i] + spec.get('lead', 0.25) + spec.get('tail', 0.1))
@@ -135,7 +135,7 @@ def build(spec):
     endc = end_card(spec["end"]["title"], spec["end"]["sub"])
     lg = logo(Image.new("RGBA", (W, H), (0, 0, 0, 0)), 90, "tr", 64)
     ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
-                           "-c:v", "libx264", "-preset", "veryfast", "-crf", "18", "-pix_fmt", "yuv420p", f"{tmp}/v.mp4"], stdin=subprocess.PIPE)
+                           "-c:v", "libx264", "-preset", "veryfast", "-crf", "22", "-maxrate", "7M", "-bufsize", "14M", "-pix_fmt", "yuv420p", f"{tmp}/v.mp4"], stdin=subprocess.PIPE)
     def scene_frame(k, t):
         p = min(1, max(0, (t - starts[k]) / (seg[k] + XF)))
         return cam(imgs[k], p, k)
@@ -186,7 +186,7 @@ def build(spec):
         # line the music's biggest hit (between 40% and 80% of the track) up with the story reveal
         env = np.convolve(np.abs(mus), np.ones(2205) / 2205, "same"); lo, hi = int(len(mus) * .4), int(len(mus) * .8)
         hit = (lo + int(np.argmax(np.diff(env[lo:hi:441])) * 441)) / sr
-        off = int(np.clip(reveal_t - hit, -1.5, 1.5) * sr); m = np.zeros(N); print('music hit', round(hit,1), 'reveal', round(reveal_t,1))
+        off = int(np.clip(reveal_t - hit, -6, 3) * sr); m = np.zeros(N); print('music hit', round(hit,1), 'reveal', round(reveal_t,1))
         src = mus[max(0, -off):]; dst = max(0, off); L = min(N - dst, len(src)); m[dst:dst + L] = src[:L]
         if dst > 0: m[:dst] = 0
         # if the track ends before the reel, bring its opening melody back for the outro
