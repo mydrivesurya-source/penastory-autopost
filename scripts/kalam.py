@@ -89,19 +89,19 @@ def sfx_click(sr):
     return (np.sin(2 * np.pi * 2400 * t) * np.exp(-t * 90) + np.random.default_rng(1).normal(0, .5, n) * np.exp(-t * 160)) * 0.5
 
 _vig = None
-def grade(fr, t, hits):
+def grade(fr, t, hits, warm=False):
     global _vig
     if _vig is None:
         yy, xx = np.mgrid[0:H, 0:W]; d = np.sqrt(((xx - W / 2) / (W * .62)) ** 2 + ((yy - H * .42) / (H * .62)) ** 2)
         _vig = np.clip(1.15 - d * 0.75, 0.35, 1)[..., None]
     a = np.asarray(fr, np.float32)
-    fl = 0.93 + 0.05 * np.sin(t * 23.0) * np.sin(t * 7.3) + 0.02 * np.sin(t * 61)          # lamp flicker
+    fl = (1.0 if warm else 0.93) + (0.015 if warm else 0.05) * np.sin(t * 23.0) * np.sin(t * 7.3) + 0.02 * np.sin(t * 61)          # lamp flicker
     a = a * _vig * fl
     g = a.mean(2, keepdims=True); a = g + (a - g) * 0.85                                       # slight desaturation
-    a[..., 2] *= 1.04; a[..., 0] *= 0.97                                                       # cold night tint
+    a[..., 2] *= (0.98 if warm else 1.04); a[..., 0] *= (1.03 if warm else 0.97)                                                       # cold night tint
     a += np.random.default_rng(int(t * 30)).normal(0, 6, (H // 4, W // 4, 1)).repeat(4, 0).repeat(4, 1)   # film grain
     im = Image.fromarray(np.clip(a, 0, 255).astype(np.uint8))
-    for h in hits:                                                                             # impact shake
+    for h in ([] if warm else hits):                                                           # impact shake
         dt = t - h
         if 0 <= dt < 0.45:
             amp = 18 * (1 - dt / 0.45) * (1.8 if h == hits[-1] else 1)
@@ -158,7 +158,7 @@ def build(spec):
             a = np.asarray(scene_frame(len(sc) - 1, t), float); m = ink_mask(min(1, (t - end_t) / XF), 99)
             fr = Image.fromarray((a * (1 - m) + np.asarray(endc.convert("RGB"), float) * m).astype(np.uint8))
         if t < end_t:
-            fr = grade(fr, t, [starts[j] for j in range(len(sc))] + [reveal_t])
+            fr = grade(fr, t, [starts[j] for j in range(len(sc))] + [reveal_t], spec.get('mood') == 'warm')
         fr = fr.convert("RGBA")
         if t < end_t:
             k = max([j for j in range(len(sc)) if voice_at[j] - 0.2 <= t] or [0])
@@ -199,7 +199,7 @@ def build(spec):
         fade = int(1.5 * sr); m[N - fade:] *= np.linspace(1, 0, fade)
         m /= max(1e-6, np.abs(m).max())
         venv = np.convolve(np.abs(voice), np.ones(4410) / 4410, "same"); duck = 1 - np.clip(venv * 3, 0, 0.25)
-        mix = m * 0.85 * duck + sfx / max(1e-6, np.abs(sfx).max()) * 0.22 + voice * spec.get("voice_level", 0.5)
+        mix = m * 0.85 * duck + sfx / max(1e-6, np.abs(sfx).max()) * spec.get('sfx_level', 0.22) + voice * spec.get("voice_level", 0.5)
     else:
         venv = np.convolve(np.abs(voice), np.ones(4410) / 4410, "same"); duck = 1 - np.clip(venv * 6, 0, 0.45)
         mix = sfx * 0.55 * duck + voice * 0.9
