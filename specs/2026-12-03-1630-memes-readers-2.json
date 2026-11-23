@@ -1,0 +1,38 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "READER PROBLEMS",
+ "images": [
+  "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=1600&q=90",
+  "https://images.unsplash.com/photo-1792143663827-c77f1c1f2d71?w=1600&q=90",
+  "https://images.unsplash.com/photo-1626491058156-2daaeea7f578?w=1600&q=90",
+  "https://images.unsplash.com/photo-1748323123788-87a32949f4b0?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "Library కి \"ఒక్క book\" కోసం వెళ్ళాను.\nబయటికి వచ్చేసరికి: 4 books, 2 గంటలు 🙂",
+   "small": "Reader problems 2",
+   "shade": 0.35
+  },
+  {
+   "image": 1,
+   "text": "Book లో climax.\nఅమ్మ: \"టీ చల్లారిపోతోంది!\"\nటీ: already చల్లారిపోయింది ☕"
+  },
+  {
+   "image": 2,
+   "text": "Auto లో ఒక్క page అనుకుని చదువుతూ, stop దాటి next area కి వెళ్ళిపోవడం 🛺"
+  },
+  {
+   "image": 3,
+   "text": "అమ్మమ్మ: \"ఎప్పుడూ ఆ phone లోనే!\"\nనేను: అమ్మమ్మా, ఇది novel. 600 pages 📖"
+  },
+  {
+   "kind": "end",
+   "image": 0,
+   "text": "ఇందులో మీరు ఏ number? 1, 2, 3 or 4?",
+   "small": "Comment చేయండి 😂"
+  }
+ ],
+ "caption": "\"ఒక్క book\" అని library కి వెళ్ళాం… 😂\n\nఇందులో మీరు ఏ number? Comment చేయండి.\nమీ ఇంట్లో ఎప్పుడూ book పట్టుకుని ఉండే వాళ్ళకి send చేయండి 😂\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugumemes #readermemes #booklovers #tenglish"
+}

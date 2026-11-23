@@ -1,0 +1,39 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "THE SECOND KEY · SERIAL",
+ "images": [
+  "https://images.unsplash.com/photo-1653495482648-0cfd8847bb11?w=1600&q=90",
+  "https://images.unsplash.com/photo-1495446815901-a7297e633e8d?w=1600&q=90",
+  "https://images.unsplash.com/photo-1560885673-4e2f056f6e2a?w=1600&q=90",
+  "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "Previously: behind a plastered wall, a hidden twelfth room. Twelve years of rejection letters to a writer called \"Sitara.\"",
+   "small": "Episode 4"
+  },
+  {
+   "image": 0,
+   "text": "Under the desk, a tin trunk with a brass lock. Ananya held up ammamma's key. It turned like it had been waiting forty years."
+  },
+  {
+   "image": 1,
+   "text": "No saris. No gold. Four hundred handwritten pages, tied with a sari border. On top, a title: The Second Key. 1984.",
+   "shade": 0.5
+  },
+  {
+   "image": 2,
+   "text": "Ananya knew that handwriting. Grocery lists, birthday cards, every letter to Bangalore. Sitara was ammamma.",
+   "shade": 0.45
+  },
+  {
+   "kind": "end",
+   "image": 3,
+   "text": "Page one said: \"Read the last chapter first.\" It was called \"Lakshmi.\" Her mother's name.",
+   "small": "Episode 5 · tomorrow 1 PM"
+  }
+ ],
+ "caption": "The key finally fits. And the novel inside has a name Ananya knows too well. 🗝️\n\nThe Second Key · Episode 4. New here? Slide 1 catches you up; Episodes 1-3 are just before this post.\n\nWould you read the last chapter first? Tell us 👇\nSend this to the friend who always reads the ending first.\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #thesecondkey #serialstory #shortstory #hyderabad"
+}

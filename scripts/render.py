@@ -354,7 +354,7 @@ def photo_slide(s, imgs, idx, total, label=""):
     W, H = 1080, 1350; end = s.get("kind") == "end"
     if s.get("kind") == "book":
         return book_card(imgs[s["image"]], s.get("text", ""), s.get("small", ""), W, H, label)
-    im = grade(imgs[s.get("image", 0)], W, H, dark=0.35 if end else 0.0).convert("RGBA")
+    im = grade(imgs[s.get("image", 0)], W, H, dark=float(s.get("shade", 0.35 if end else 0.0))).convert("RGBA")  # "shade": darken a bright photo
     g = np.zeros((H, W, 4), np.uint8); t = np.clip((np.arange(H) - H * 0.38) / (H * 0.62), 0, 1) ** 1.4
     g[..., 3] = (np.minimum(t * 1.15, 1) * (235 if not end else 200))[:, None]; im = Image.alpha_composite(im, Image.fromarray(g))
     d = ImageDraw.Draw(im); M = 92; Wt = W - 2 * M

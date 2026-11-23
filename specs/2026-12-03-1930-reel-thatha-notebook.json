@@ -1,0 +1,45 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1623211270083-5743da6c67ec?w=1600&q=90",
+  "https://images.unsplash.com/photo-1780886729568-cac46e1d8ed1?w=1600&q=90",
+  "https://images.unsplash.com/photo-1651678938586-affccc71c270?w=1600&q=90",
+  "https://images.unsplash.com/photo-1794550399755-2e72c031cca2?w=1600&q=90"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "తాతయ్యకి చదవడం రాదు.",
+   "dur": 2.8,
+   "small": "ఒక్క కథ"
+  },
+  {
+   "image": 1,
+   "text": "అందుకే ప్రతి సాయంత్రం మర్రిచెట్టు కింద నేను ఆయనకి ఒక కథ చదివి వినిపించేవాణ్ణి.",
+   "dur": 4.0
+  },
+  {
+   "image": 2,
+   "text": "పదేళ్ళు. వందల కథలు. తర్వాత నేను Hyderabad కి job కి వెళ్ళిపోయాను. కథలు ఆగిపోయాయి.",
+   "dur": 4.0
+  },
+  {
+   "image": 3,
+   "text": "తాతయ్య వెళ్ళిపోయాక నాన్నమ్మ ఒక పాత notebook ఇచ్చింది. \"నీ కోసం దాచాడు రా.\"",
+   "dur": 4.0
+  },
+  {
+   "image": 0,
+   "text": "లోపల వంకర అక్షరాలు. డెబ్భై ఏళ్ళ వయసులో అక్షరాలు నేర్చుకున్నాడు. మొదటి page: \"ఈసారి కథ నేను చెప్తా.\"",
+   "dur": 4.4
+  }
+ ],
+ "end": {
+  "image": 1,
+  "text": "మీకు మొదట కథలు చెప్పింది ఎవరు?",
+  "small": "Comment చేయండి 👇"
+ },
+ "caption": "తాతయ్యకి చదవడం రాదు. అందుకే నేను చదివి వినిపించేవాణ్ణి. 🌳\n\nచివరి beat వరకు చూడండి.\n\nమీకు మొదట కథలు చెప్పింది ఎవరు — తాతయ్య, అమ్మమ్మ, అమ్మ? Comment చేయండి.\nమీ తాతయ్యని గుర్తు చేసే వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #thathayya #shortstory #tenglish",
+ "music": 2
+}

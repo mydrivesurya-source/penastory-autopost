@@ -1,0 +1,47 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1706038416284-6c51d61e2f54?w=1600&q=90",
+  "https://images.unsplash.com/photo-1787044050216-19d30c0aeaf5?w=1600&q=90",
+  "https://images.unsplash.com/photo-1696941515998-d83f24967aca?w=1600&q=90",
+  "https://images.unsplash.com/photo-1651678938586-affccc71c270?w=1600&q=90",
+  "https://images.unsplash.com/photo-1750834115164-8c2658f18dd0?w=1600&q=90"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "He read one chapter a week. Standing up.",
+   "dur": 2.8,
+   "small": "A story"
+  },
+  {
+   "image": 1,
+   "text": "Near Charminar, a footpath book stall. Every Sunday a boy read one chapter, then put the book back. He couldn't afford it.",
+   "dur": 3.8
+  },
+  {
+   "image": 2,
+   "text": "Nine Sundays. Nine chapters. The old seller never said a word. He just never sold that book.",
+   "dur": 3.6
+  },
+  {
+   "image": 3,
+   "text": "The tenth Sunday, the boy didn't come. Or the next. Or the one after that.",
+   "dur": 3.4
+  },
+  {
+   "image": 0,
+   "text": "Twenty years later, a parcel reached the stall: a new novel, signed \"For the man who kept chapter ten for me.\"",
+   "dur": 4.0,
+   "small": "The author's name was the boy's."
+  }
+ ],
+ "end": {
+  "image": 4,
+  "text": "Who kept a book for you?",
+  "small": "Tell us below 👇"
+ },
+ "caption": "Nine Sundays, nine chapters, one book that was never sold. 📚\n\nWho kept a book aside for you: a seller, a librarian, an older cousin? Tell us 👇\nSend this to the person who gave you your first book.\n\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #shortstory #hyderabad #bookstagramindia #readersofinstagram",
+ "music": 1
+}

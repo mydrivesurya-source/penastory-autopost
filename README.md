@@ -45,7 +45,9 @@ A story ends on a book only where the theme genuinely matches. Never claim a boo
   Ep3 behind the wall upstairs: a tiny room, a desk, a typewriter, letters to publishers signed "Sitara", all rejections. Ep4 a locked trunk the key opens:
   a finished novel, 1984, never published; note "Read the last chapter first." Ep5 the last chapter is about a daughter who left home (Ananya's mother).
   Ep6 Ananya calls her mother; the mother knew nothing about the novel. Ep7 Ananya cancels the sale. Ep8 finale: the book gets its first reader —
-  her mother, reading it aloud in the twelfth room. (Keep it fiction; never present it as a real Pen A Story publication.)
+  her mother, reading it aloud in the twelfth room.
+  Written so far: Ep4 (3 Dec) — trunk opens, 400-page novel titled *The Second Key* (1984), Sitara = ammamma (Rukmini);
+  page one says "Read the last chapter first"; the last chapter is called "Lakshmi" = Ananya's mother. Ep5 teaser: 1984, night train to Bangalore. (Keep it fiction; never present it as a real Pen A Story publication.)
 - Next serial (#3, from 8 Dec) is Telugu; pick genre from the stats.
 
 ## Learnings (virality decision log)
@@ -62,3 +64,10 @@ A story ends on a book only where the theme genuinely matches. Never claim a boo
   Every post so far: 0 shares, 0 saves, 0 comments. Reels reach 3-5x carousels. Telugu carousels median 2.15 vs English posts 1.8. No format has 5+ posts yet.
   Change (from 2 Dec): every caption gets one concrete "send this to <specific person>" line (shares are the gap); reels keep the <=8-word 2.8 s hook
   and add a twist in the final beat. Mix and 50/50 language split unchanged. Next check: if reels keep 3x reach through 29 Nov, add a 2nd daily reel from 30 Nov+.
+- **23 Nov** — Review on the latest stats (22 Nov 21:41 IST; the 23 Nov nightly run had not happened yet). 13 system posts measured; compared at equal age
+  across the 3 snapshots because raw scores punish posts <9 h old. Won: reels (reach 35-45 at 4 h, 85-107 at 28 h, 3-6x carousels; median 2.2), serial ep1 (3.1).
+  Weak: serial reach falling episode to episode (16 -> 13 -> 11 at 9 h), One Line ep1 and nostalgia (1.3 at 5 h vs memes 1.8), Telugu standalones tiffin/cricket (1.1-1.3).
+  Still 0 shares / 0 saves / 0 comments on every post; still no format with 5+ posts, so nothing cut.
+  Change (3 Dec): serial slide 1 = one-line "Previously" recap; 19:30 Telugu standalone told as a Telugu photo reel (test: if it beats the Telugu carousel
+  median, 19:30 alternates reel/carousel); 16:30 picks memes. Renderer: new per-slide "shade" to darken bright photos (QC kept failing on bright frames).
+  Followers flat: 461 -> 460 -> 460.
