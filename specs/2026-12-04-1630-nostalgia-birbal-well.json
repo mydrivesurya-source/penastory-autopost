@@ -1,0 +1,37 @@
+{
+ "kind": "carousel",
+ "style": "photo",
+ "label": "కథ గుర్తుందా? · AKBAR-BIRBAL",
+ "images": [
+  "https://images.unsplash.com/photo-1768052271115-3a01d2b042b9?w=1600&q=90",
+  "https://images.unsplash.com/photo-1759738098462-90ffac98c554?w=1600&q=90",
+  "https://images.unsplash.com/photo-1786468539777-fa9c5eae293d?w=1600&q=90"
+ ],
+ "slides": [
+  {
+   "image": 0,
+   "text": "ఈ కథ గుర్తుందా? 🪣\nబావి అమ్మేశాడు. కానీ నీళ్ళు అమ్మలేదట!",
+   "small": "Akbar-Birbal"
+  },
+  {
+   "image": 1,
+   "text": "ఒక రైతు పక్కింటి వాడి దగ్గర బావి కొన్నాడు. మర్నాడు నీళ్ళు తోడబోతే: \"బావి నీది. నీళ్ళు నావి!\""
+  },
+  {
+   "image": 2,
+   "text": "గొడవ Akbar దర్బారు దాకా వెళ్ళింది. అందరూ Birbal వైపు చూశారు.",
+   "shade": 0.3
+  },
+  {
+   "image": 1,
+   "text": "Birbal ఏమన్నాడో guess చేయండి. Next slide కి ముందే comment లో చెప్పండి 👇"
+  },
+  {
+   "kind": "end",
+   "image": 0,
+   "text": "\"నీళ్ళు నీవైతే, నా బావిలో ఉంచినందుకు అద్దె కట్టు. లేదా ఈరోజే తీసుకెళ్ళు!\"",
+   "small": "మీకు ఇష్టమైన Birbal కథ ఏది?"
+  }
+ ],
+ "caption": "బావి అమ్మేశాడు, నీళ్ళు కాదట! 😂 ఈ కథ గుర్తుందా?\n\nBirbal answer చూసే ముందు మీ guess comment చేయండి.\nChandamama కథలు గుర్తున్న మీ friend కి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #akbarbirbal #telugukathalu #childhoodstories #nostalgia"
+}

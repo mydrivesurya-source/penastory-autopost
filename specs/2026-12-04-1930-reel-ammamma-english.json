@@ -1,0 +1,45 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1496813146940-1601b02f81a4?w=1600&q=90",
+  "https://images.unsplash.com/photo-1626149637281-4e227308da18?w=1600&q=90",
+  "https://images.unsplash.com/photo-1682467612877-f9b5e55ff2af?w=1600&q=90",
+  "https://images.unsplash.com/photo-1572608705929-0e245b6fa24d?w=1600&q=90"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "డెబ్భై ఏళ్ళకి అమ్మమ్మ English నేర్చుకుంది.",
+   "dur": 2.8,
+   "small": "ఒక్క కథ"
+  },
+  {
+   "image": 1,
+   "text": "ప్రతి రోజు 4 గంటలకి auto ఎక్కి library కి వెళ్ళేది. ఎందుకో ఎవ్వరికీ చెప్పలేదు.",
+   "dur": 3.8
+  },
+  {
+   "image": 2,
+   "text": "పొద్దున్నే కాకులకి అన్నం పెట్టి, dictionary పట్టుకుని verandah లో కూర్చునేది.",
+   "dur": 3.8
+  },
+  {
+   "image": 3,
+   "text": "ఒక రోజు ఆమె మంచం పక్కన నా first novel కనిపించింది. English లో. ప్రతి page లో pencil తో తెలుగు అర్థాలు.",
+   "dur": 4.2
+  },
+  {
+   "image": 0,
+   "text": "చివరి page లో: \"అర్థమైంది రా. బాగా రాశావ్.\" 212 pages. ఒక్క ఏడాది.",
+   "dur": 4.2
+  }
+ ],
+ "end": {
+  "image": 1,
+  "text": "మీ కోసం ఇంత కష్టపడింది ఎవరు?",
+  "small": "Comment చేయండి 👇"
+ },
+ "caption": "డెబ్భై ఏళ్ళకి అమ్మమ్మ English నేర్చుకుంది. ఎందుకో చివరి beat లో తెలుస్తుంది. 📖\n\nమీ కోసం ఇంత కష్టపడింది ఎవరు? Comment చేయండి.\nమీ అమ్మమ్మని గుర్తు చేసే వాళ్ళకి send చేయండి.\nDaily stories in Telugu & English — free Pen A Story app, link in bio.\n\n#penastory #telugustories #ammamma #shortstory #tenglish",
+ "music": 2
+}

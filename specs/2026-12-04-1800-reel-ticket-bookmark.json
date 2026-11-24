@@ -1,0 +1,51 @@
+{
+ "kind": "reel",
+ "style": "photo",
+ "images": [
+  "https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=1600&q=90",
+  "https://images.unsplash.com/photo-1564291886459-a39ad7415125?w=1600&q=90",
+  "https://images.unsplash.com/photo-1528436610461-e9be9d1f7d6b?w=1600&q=90",
+  "assets/covers/love-that-lasts.png"
+ ],
+ "beats": [
+  {
+   "image": 0,
+   "text": "The bookmark was a train ticket. 1999.",
+   "dur": 2.8,
+   "small": "A story"
+  },
+  {
+   "image": 1,
+   "text": "Abids Sunday book market. ₹40 for a worn copy of amma's favourite novel.",
+   "dur": 3.4
+  },
+  {
+   "image": 2,
+   "text": "Page 112: a Vizag to Hyderabad ticket. 14 February 1999. Never used.",
+   "dur": 3.6
+  },
+  {
+   "image": 0,
+   "text": "On the back, in appa's handwriting: \"Didn't go. Stayed for her.\"",
+   "dur": 3.6
+  },
+  {
+   "image": 2,
+   "text": "Amma sold her old books in 2001. This was her copy. She never knew the ticket was in it.",
+   "dur": 4.0,
+   "small": "Some love stories wait on page 112."
+  }
+ ],
+ "end": {
+  "image": 0,
+  "text": "Strangest thing you found inside an old book?",
+  "small": "Tell us below 👇"
+ },
+ "caption": "The bookmark was a train ticket from 1999. It was never used. 🎟️\n\nWhat's the strangest thing you've found inside an old book? Tell us 👇\nSend this to the one who stayed.\n\nNew stories every day on the free Pen A Story app. Link in bio.\n\n#penastory #shortstory #hyderabad #bookstagramindia #lovestory",
+ "music": 0,
+ "book": {
+  "image": 3,
+  "text": "The Secret to Love That Lasts",
+  "small": "Sukanya Biswas · on the Pen A Story app"
+ }
+}

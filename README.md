@@ -47,7 +47,9 @@ A story ends on a book only where the theme genuinely matches. Never claim a boo
   Ep6 Ananya calls her mother; the mother knew nothing about the novel. Ep7 Ananya cancels the sale. Ep8 finale: the book gets its first reader —
   her mother, reading it aloud in the twelfth room.
   Written so far: Ep4 (3 Dec) — trunk opens, 400-page novel titled *The Second Key* (1984), Sitara = ammamma (Rukmini);
-  page one says "Read the last chapter first"; the last chapter is called "Lakshmi" = Ananya's mother. Ep5 teaser: 1984, night train to Bangalore. (Keep it fiction; never present it as a real Pen A Story publication.)
+  page one says "Read the last chapter first"; the last chapter is called "Lakshmi" = Ananya's mother. Ep5 teaser: 1984, night train to Bangalore.
+  Written: Ep5 (4 Dec) — chapter "Lakshmi": Kacheguda, 1984, 11:40 PM, Lakshmi (19) leaves for Bangalore against her father ("don't come back");
+  ammamma watched from behind a pillar, never stopped her; last line "She never knew I came. One day, her daughter will tell her." Ep6 teaser: 11:40 PM, Ananya dials Bangalore. (Keep it fiction; never present it as a real Pen A Story publication.)
 - Next serial (#3, from 8 Dec) is Telugu; pick genre from the stats.
 
 ## Learnings (virality decision log)
@@ -71,3 +73,11 @@ A story ends on a book only where the theme genuinely matches. Never claim a boo
   Change (3 Dec): serial slide 1 = one-line "Previously" recap; 19:30 Telugu standalone told as a Telugu photo reel (test: if it beats the Telugu carousel
   median, 19:30 alternates reel/carousel); 16:30 picks memes. Renderer: new per-slide "shade" to darken bright photos (QC kept failing on bright frames).
   Followers flat: 461 -> 460 -> 460.
+- **24 Nov** — Review on the latest stats (23 Nov 21:44 IST; the 24 Nov nightly run had not happened yet). 17 system posts measured, compared at equal age.
+  Format medians: reel 2.35 (top), memes 1.8, serial 1.65, nostalgia 1.5, One Line 1.4, standalone 1.4, call-out 1.2.
+  Standalone carousels are the first format with 5 posts and sit in the bottom third -> 19:30 Telugu standalone is a photo reel again on 4 Dec.
+  Theme: book/reading-centred standalones won (library-card 2.6, auto-library 2.4), slice-of-life lost (tiffin 1.4, cricket 1.2, umbrella 1.1)
+  -> every story keeps a book or reading at its core. Serial reach at 9 h 16 -> 13 -> 11 -> 10 (decay flattening).
+  Watch: reel power-cut got only 6 reach at 3.7 h (others 35-45) but 12.6 s avg watch (others 2.2-3.5 s); first reel with a book end card ->
+  4 Dec English reel repeats the book card to test. Nostalgia reworked: "ఈ కథ గుర్తుందా?" hook + a "guess the ending" slide (comments still 0).
+  Photo pool: Chrome unreachable; the 14 photos unused on 1-3 Dec were all used on 4 Dec, so 5 Dec needs new Unsplash photos or a 2-day gap.
