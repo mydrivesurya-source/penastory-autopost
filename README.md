@@ -81,3 +81,10 @@ A story ends on a book only where the theme genuinely matches. Never claim a boo
   Watch: reel power-cut got only 6 reach at 3.7 h (others 35-45) but 12.6 s avg watch (others 2.2-3.5 s); first reel with a book end card ->
   4 Dec English reel repeats the book card to test. Nostalgia reworked: "ఈ కథ గుర్తుందా?" hook + a "guess the ending" slide (comments still 0).
   Photo pool: Chrome unreachable; the 14 photos unused on 1-3 Dec were all used on 4 Dec, so 5 Dec needs new Unsplash photos or a 2-day gap.
+- **25 Nov** — Posting PAUSED since 25 Nov 06:09 IST on Surya's request (60 queued items in hold/paused-2026-11-25; specs 30 Nov-4 Dec also unbuilt
+  until resumed). Nothing posted today, no new days written (any new spec would build into queue/ and post, breaking the pause).
+  Review on 24 Nov 21:46 IST stats, 21 system posts: reel median 2.2 (reach 88-109 for the 20-22 Nov reels, but 24 Nov margin-notes only 8),
+  serial ep reach 32 -> 17 -> 13 -> 10 -> 11, nostalgia Tenali 0.7 and chai-5am standalone 0.6 (bottom). Still 0 shares / 0 saves / 0 comments
+  on every system post; followers flat at 460. Old account hits (Hanuman reel 110, teacher-tribute 98 with 26 shares, Bombay-1983 43) all beat
+  the system's best (3.2) by 10x+: emotional tribute / devotional / true-story hooks win, fictional micro-stories do not travel.
+  Decision for the restart: lead with true-feel tribute + nostalgia reels, cut daily carousels to 2, and re-date the held serial before resuming.
