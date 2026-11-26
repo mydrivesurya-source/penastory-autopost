@@ -88,3 +88,8 @@ A story ends on a book only where the theme genuinely matches. Never claim a boo
   on every system post; followers flat at 460. Old account hits (Hanuman reel 110, teacher-tribute 98 with 26 shares, Bombay-1983 43) all beat
   the system's best (3.2) by 10x+: emotional tribute / devotional / true-story hooks win, fictional micro-stories do not travel.
   Decision for the restart: lead with true-feel tribute + nostalgia reels, cut daily carousels to 2, and re-date the held serial before resuming.
+- **26 Nov** — Still PAUSED (queue/ empty, 60 items in hold/paused-2026-11-25, no resume signal); no specs written. Review on 25 Nov 21:48 IST stats
+  (26 Nov nightly not yet run), 21 system posts. First share ever: chai-5am standalone (1 share, score 0.6 -> 4.2, now #1). Reels 23-24 Nov stuck at
+  reach 11-13 vs 89-109 for 20-22 Nov reels, though watch time is longer (5.4-8.7 s vs 2.4-3.0 s): distribution, not retention, fell.
+  Serial eps 3-5 flat at 1.3; Tenali nostalgia last (0.8). Followers 460 -> 458. Restart plan unchanged; on resume, add the "send this to" share line
+  that the chai-5am post carried to every caption, and re-date the held serial.
