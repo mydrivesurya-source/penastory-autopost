@@ -1,12 +1,37 @@
 {
- "at": "2026-11-25T16:18:48.282815Z",
+ "at": "2026-11-26T16:11:10.224389Z",
  "profile": {
   "username": "pen_a_story",
   "followers_count": 458,
-  "media_count": 276,
+  "media_count": 277,
   "id": "29212945964981930"
  },
  "posts": [
+  {
+   "id": "17914311570563623",
+   "caption": "Some cases don’t want to be solved.\n\nBut this one is waiting for you. 🔍\n\nA locke",
+   "media_type": "VIDEO",
+   "media_product_type": "REELS",
+   "timestamp": "2026-11-26T15:40:01+0000",
+   "permalink": "https://www.instagram.com/reel/DgNcUIdgUlq/",
+   "like_count": 2,
+   "comments_count": 0,
+   "insights": {
+    "views": 3,
+    "reach": 1,
+    "saved": 0,
+    "shares": 0,
+    "total_interactions": 2,
+    "ig_reels_avg_watch_time": 127861
+   },
+   "spec": "",
+   "rates": {
+    "share_rate": 0.0,
+    "save_rate": 0.0,
+    "follow_rate": 0.0
+   },
+   "virality": 1.0
+  },
   {
    "id": "17970897414209562",
    "caption": "5 AM. A chai stall. An old man who stopped coming. ☕\n\nA complete story in one po",
@@ -17,8 +42,8 @@
    "like_count": 2,
    "comments_count": 0,
    "insights": {
-    "views": 24,
-    "reach": 16,
+    "views": 27,
+    "reach": 18,
     "saved": 0,
     "shares": 1,
     "total_interactions": 3,
@@ -27,11 +52,11 @@
    },
    "spec": "2026-11-24-1930-story-chai-5am.json",
    "rates": {
-    "share_rate": 6.25,
+    "share_rate": 5.56,
     "save_rate": 0.0,
     "follow_rate": 0.0
    },
-   "virality": 4.2
+   "virality": 4.3
   },
   {
    "id": "18132384967647353",
@@ -43,12 +68,12 @@
    "like_count": 2,
    "comments_count": 0,
    "insights": {
-    "views": 16,
-    "reach": 13,
+    "views": 19,
+    "reach": 15,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2,
-    "ig_reels_avg_watch_time": 5444
+    "ig_reels_avg_watch_time": 4720
    },
    "spec": "2026-11-24-1800-reel-margin-notes.json",
    "rates": {
@@ -68,8 +93,8 @@
    "like_count": 1,
    "comments_count": 0,
    "insights": {
-    "views": 26,
-    "reach": 13,
+    "views": 32,
+    "reach": 16,
     "saved": 0,
     "shares": 0,
     "total_interactions": 1,
@@ -94,8 +119,8 @@
    "like_count": 2,
    "comments_count": 0,
    "insights": {
-    "views": 33,
-    "reach": 15,
+    "views": 35,
+    "reach": 17,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2,
@@ -108,7 +133,7 @@
     "save_rate": 0.0,
     "follow_rate": 0.0
    },
-   "virality": 1.3
+   "virality": 1.4
   },
   {
    "id": "18156029344497799",
@@ -120,8 +145,8 @@
    "like_count": 2,
    "comments_count": 0,
    "insights": {
-    "views": 47,
-    "reach": 19,
+    "views": 48,
+    "reach": 20,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2,
@@ -146,12 +171,12 @@
    "like_count": 3,
    "comments_count": 0,
    "insights": {
-    "views": 13,
-    "reach": 11,
+    "views": 16,
+    "reach": 13,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 8665
+    "ig_reels_avg_watch_time": 7751
    },
    "spec": "2026-11-23-1800-reel-power-cut.json",
    "rates": {
@@ -159,7 +184,7 @@
     "save_rate": 0.0,
     "follow_rate": 0.0
    },
-   "virality": 1.6
+   "virality": 1.7
   },
   {
    "id": "18142239778642686",
@@ -171,8 +196,8 @@
    "like_count": 3,
    "comments_count": 0,
    "insights": {
-    "views": 33,
-    "reach": 9,
+    "views": 44,
+    "reach": 10,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3,
@@ -185,7 +210,7 @@
     "save_rate": 0.0,
     "follow_rate": 0.0
    },
-   "virality": 1.8
+   "virality": 1.9
   },
   {
    "id": "18234173392328631",
@@ -197,8 +222,8 @@
    "like_count": 2,
    "comments_count": 0,
    "insights": {
-    "views": 27,
-    "reach": 11,
+    "views": 33,
+    "reach": 12,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2,
@@ -223,8 +248,8 @@
    "like_count": 2,
    "comments_count": 0,
    "insights": {
-    "views": 22,
-    "reach": 8,
+    "views": 23,
+    "reach": 9,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2,
@@ -249,12 +274,12 @@
    "like_count": 3,
    "comments_count": 0,
    "insights": {
-    "views": 103,
-    "reach": 91,
+    "views": 105,
+    "reach": 92,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3,
-    "ig_reels_avg_watch_time": 2947
+    "ig_reels_avg_watch_time": 2921
    },
    "spec": "2026-11-22-1800-reel-letter-next-year.json",
    "rates": {
@@ -274,8 +299,8 @@
    "like_count": 2,
    "comments_count": 0,
    "insights": {
-    "views": 38,
-    "reach": 13,
+    "views": 40,
+    "reach": 15,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2,
@@ -352,12 +377,12 @@
    "like_count": 2,
    "comments_count": 0,
    "insights": {
-    "views": 122,
-    "reach": 109,
+    "views": 125,
+    "reach": 110,
     "saved": 0,
     "shares": 0,
     "total_interactions": 2,
-    "ig_reels_avg_watch_time": 3023
+    "ig_reels_avg_watch_time": 3000
    },
    "spec": "2026-11-21-1800-reel-window-seat.json",
    "rates": {
@@ -404,7 +429,7 @@
    "comments_count": 0,
    "insights": {
     "views": 63,
-    "reach": 18,
+    "reach": 19,
     "saved": 0,
     "shares": 0,
     "total_interactions": 3,
@@ -455,12 +480,12 @@
    "like_count": 4,
    "comments_count": 0,
    "insights": {
-    "views": 100,
-    "reach": 89,
+    "views": 102,
+    "reach": 90,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4,
-    "ig_reels_avg_watch_time": 2397
+    "ig_reels_avg_watch_time": 2400
    },
    "spec": "2026-11-20-1800-reel-last-customer.json",
    "rates": {
@@ -532,8 +557,8 @@
    "like_count": 4,
    "comments_count": 0,
    "insights": {
-    "views": 59,
-    "reach": 17,
+    "views": 62,
+    "reach": 18,
     "saved": 0,
     "shares": 0,
     "total_interactions": 4,
@@ -583,12 +608,12 @@
    "like_count": 15,
    "comments_count": 3,
    "insights": {
-    "views": 289,
-    "reach": 213,
+    "views": 291,
+    "reach": 214,
     "saved": 1,
     "shares": 0,
     "total_interactions": 20,
-    "ig_reels_avg_watch_time": 6731
+    "ig_reels_avg_watch_time": 6686
    },
    "spec": "",
    "rates": {
@@ -633,12 +658,12 @@
    "like_count": 5,
    "comments_count": 0,
    "insights": {
-    "views": 316,
-    "reach": 243,
+    "views": 321,
+    "reach": 246,
     "saved": 0,
     "shares": 1,
     "total_interactions": 6,
-    "ig_reels_avg_watch_time": 4157
+    "ig_reels_avg_watch_time": 4187
    },
    "spec": "",
    "rates": {
@@ -708,12 +733,12 @@
    "like_count": 122,
    "comments_count": 0,
    "insights": {
-    "views": 921,
+    "views": 922,
     "reach": 769,
     "saved": 14,
     "shares": 4,
     "total_interactions": 144,
-    "ig_reels_avg_watch_time": 11908
+    "ig_reels_avg_watch_time": 11895
    },
    "spec": "",
    "rates": {
@@ -998,31 +1023,6 @@
     "follow_rate": 0.0
    },
    "virality": 16.2
-  },
-  {
-   "id": "18096325016448481",
-   "caption": "British Army. Scotland Yard. 🇬🇧\nNever writes anything down. He just remembers. 🧠",
-   "media_type": "VIDEO",
-   "media_product_type": "REELS",
-   "timestamp": "2026-10-18T00:00:07+0000",
-   "permalink": "https://www.instagram.com/reel/DenWJVvTsZC/",
-   "like_count": 12,
-   "comments_count": 6,
-   "insights": {
-    "views": 177,
-    "reach": 131,
-    "saved": 0,
-    "shares": 0,
-    "total_interactions": 19,
-    "ig_reels_avg_watch_time": 7749
-   },
-   "spec": "",
-   "rates": {
-    "share_rate": 0.0,
-    "save_rate": 0.0,
-    "follow_rate": 0.0
-   },
-   "virality": 16.8
   }
  ]
 }
